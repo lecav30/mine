@@ -8,4 +8,4 @@ This repository is about other configurations that I need for several applicatio
 - VS Code
 - Windows Terminal 
 - Git Bash
-- Powershell 7
+- PowerShell 7
