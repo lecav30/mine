@@ -1,0 +1,242 @@
+{
+  /* COMENTARIOS */
+  /*
+  https: //sourceforge.net/projects/mingw/
+  Para compilar programas en c++ en powershell o cmd usa el code runner
+  Para compilar programas en c++ en bash usa:
+  g++ "nombre del archivo".cpp -o "nombre que le daras al archivo exe"
+  Para ejecutar el programa en la terminal:
+  (debes estar en el directorio) ./"nombre que le daras al archivo exe"
+  g++ helloWorld.cpp -o helloWorld | ./helloWorld.exe
+  */
+  /*
+  Por si la cagas en quitar los errores:
+  Ctrl Shift P
+  C/C++:Enabled Error Squiggles
+  */
+  /* SETTINGS */
+  "workbench.settings.editor": "json",
+  "editor.insertSpaces": true,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 4,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 16,
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": false,
+  // Operator Mono, Dank Mono, CaskaydiaCove NF, agave Nerd Font, Meslo MGDZ, Fira Code
+  // Cascadia Code, CodeNewRoman Nerd Font, Hack NF, Iosevka, Lekton NF (Lekton Nerd Font)Lekton Nerd Font
+  // UbuntuMono Nerd Font (Mono), Monoid Nerd Font, MonoLisa
+  "editor.fontFamily": "MonoLisa",
+  /* FORMATOS */
+  "[csv]": {
+    "editor.insertSpaces": false
+  },
+  /* LENGUAJES/FILES */
+  // C++
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.clang_format_path": "C:\\Program FilesLLVM\\bin",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
+  // "C_Cpp.clang_format_style": "file",
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "files.insertFinalNewline": true
+  },
+  // html
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  // javascript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // css
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 2
+  },
+  // json
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // python
+  "[python]": {
+    // "editor.defaultFormatter": "",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+    "files.insertFinalNewline": true
+  },
+  "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
+
+  /* Extensión pylint (configuración para ejercicios pygame) */
+  "python.linting.pylintArgs": [
+    "--extension-pkg-whitelist=pygame",
+    "--disable=C0103, C0114, C0115, C0116"
+    // Pylint features. Pylint global options and switches
+    // http://pylint.pycqa.org/en/2.4/technical_reference/features.html
+    // http://pylint.pycqa.org/en/latest/technical_reference/features.html
+    // C0103: invalid-name - Used when the name doesn't conform to naming rules associated to its type (constant, variable, class...).
+    // C0114: missing-module-docstring - Used when a module has no docstring.Empty modules do not require a docstring.
+    // C0115: missing-class-docstring - Used when a class has no docstring.Even an empty class must have a docstring.
+    // C0116: missing-function-docstring - Used when a function or method has no docstring.Some special methods like __init__ do not require a docstring.
+  ],
+
+  /* MULTI COMAND */
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.clearTerminal",
+      "sequence": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\u000D"
+          }
+        },
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    {
+      "command": "multiCommand.pythonExecuteInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
+          }
+        },
+        "workbench.action.focusActiveEditorGroup"
+      ]
+    },
+    {
+      "command": "multiCommand.pythonExecuteAndFocusInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
+          }
+        }
+      ]
+    },
+    {
+      "command": "multiCommand.pythonMptcInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dmptc '${fileBasename}' "
+          }
+        }
+      ]
+    }
+  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+    // Valid values: "default", "workbench.editorinputs.searchEditorInput",
+    // "imagePreview.previewEditor", "vscode.markdown.preview.editor",
+    //  "jsProfileVisualizer.cpuprofile.table", "jsProfileVisualizer.heapprofile.table", "jupyter-notebook".
+  },
+  /* CODE RUNNER */
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  /* POLACODE */
+  "polacode.backgroundColor": "#ffffff",
+  "polacode.target": "snippet",
+  /* LIVESERVER */
+  "liveServer.settings.donotShowInfoMsg": true,
+  /* LIVESHARE */
+  "liveshare.connectionMode": "relay",
+  /* COLORIZE */
+  "colorize.languages": ["javascript", "css", "json"],
+  /* TABNINE */
+  "tabnine.experimentalAutoImports": true,
+  /* VIM */
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    // {
+    //   "before": ["j", "j"],
+    //   "after": ["<Esc>"]
+    // }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-b>": false
+  },
+  /* TERMINAL */
+  // Terminal Integrada
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.fontFamily": "Dank Mono",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  // "PowerShell", "Windows PowerShell", "Git Bash", "Command Prompt", "JavaScript Debug Terminal".
+  "terminal.integrated.profiles.windows": {
+    "Pwsh7": {
+      "source": "PowerShell7",
+      "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  // Terminal Externa
+  // "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.external.windowsExec": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  /* PERSONALIZATION */
+  "editor.minimap.enabled": false,
+  "workbench.colorTheme": "Winter is Coming (Dark Black)",
+  "workbench.iconTheme": "material-icon-theme",
+  "window.menuBarVisibility": "compact",
+  "window.titleSeparator": " ~ ",
+  "explorer.confirmDelete": false,
+  /* OTROS */
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.activityBar.visible": false
+}

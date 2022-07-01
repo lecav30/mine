@@ -1,0 +1,45 @@
+// Place your key bindings in this file to override the defaults
+[
+  //
+  // Atajos de teclado recomendados para el curso Introducción a la programación con Python de www.mclibre.org
+  {
+    // Pasar el foco al terminal
+    "key": "ctrl+alt+]",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    // Pasar el foco al editor de programa
+    "key": "ctrl+alt+[",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    // Ejecutar programa de Python en el terminal (manteniendo el foco en el editor)
+    "key": "ctrl+alt+f5",
+    "command": "multiCommand.pythonExecuteInTerminal"
+  },
+  {
+    // Ejecutar programa de Python en el terminal (pasando el foco al termninal)
+    "key": "ctrl+alt+shift+f5",
+    "command": "multiCommand.pythonExecuteAndFocusInTerminal"
+  },
+  // Atajos para mejorar la experiencia del autocompletado
+  {
+    // Sugerencia previa de autocompletado
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    // Siguiente sugerencia de autocompletado
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  // Atajo para Emmet
+  {
+    "key": "ctrl+alt+e",
+    "command": "mithrilEmmet.expand",
+    "when": "editorFocus"
+  }
+]
