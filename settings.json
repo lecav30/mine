@@ -59,8 +59,14 @@
       "cursorShape": "bar",
       "experimental.retroTerminalEffect": false,
       "font": {
-        "face": "UbuntuMono Nerd Font Mono",
-        "size": 13
+        // UbuntuMono Nerd Font Mono
+        // MesloLGLDZ Nerd Font Mono
+        // CodeNewRoman Nerd Font Mono
+        // Hack Nerd Font Mono
+        // Monoid Nerd Font
+        // Lekton Nerd Font Mono 
+        "face": "Hack Nerd Font Mono",
+        "size": 11
       },
       "opacity": 70,
       "padding": "8, 8, 8, 8",
