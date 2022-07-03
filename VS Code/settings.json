@@ -26,10 +26,20 @@
   "editor.fontSize": 16,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
-  // Operator Mono, Dank Mono, CaskaydiaCove NF, agave Nerd Font, Meslo MGDZ, Fira Code
-  // Cascadia Code, CodeNewRoman Nerd Font, Hack NF, Iosevka, Lekton NF (Lekton Nerd Font)Lekton Nerd Font
-  // UbuntuMono Nerd Font (Mono), Monoid Nerd Font, MonoLisa
-  "editor.fontFamily": "MonoLisa",
+  // UbuntuMono Nerd Font Mono
+  // MesloLGLDZ Nerd Font Mono
+  // CodeNewRoman Nerd Font Mono
+  // Hack Nerd Font Mono
+  // Monoid Nerd Font
+  // Lekton Nerd Font Mono
+  // MonoLisa
+  // Dank Mono
+  // Iosevka
+  // CodeNewRoman Nerd Font
+  // agave Nerd Font
+  // Fira Code
+  // CaskaydiaCove Nerd Font Mono
+  "editor.fontFamily": "Dank Mono",
   /* FORMATOS */
   "[csv]": {
     "editor.insertSpaces": false
@@ -45,7 +55,6 @@
     "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "files.insertFinalNewline": true
   },
   // html
@@ -178,13 +187,26 @@
     {
       "before": ["leader", "w"],
       "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
     }
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false,
-    "<C-b>": false
+    "<C-b>": false,
+    "<C-h>": false
   },
   /* TERMINAL */
   // Terminal Integrada
