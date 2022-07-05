@@ -258,7 +258,8 @@
   "window.menuBarVisibility": "compact",
   "window.titleSeparator": " ~ ",
   "explorer.confirmDelete": false,
+  "workbench.activityBar.visible": false,
+  "editor.cursorStyle": "underline",
   /* OTROS */
-  "security.workspace.trust.untrustedFiles": "open",
-  "workbench.activityBar.visible": false
+  "security.workspace.trust.untrustedFiles": "open"
 }
