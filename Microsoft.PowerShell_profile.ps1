@@ -1,5 +1,5 @@
-oh-my-posh --init --shell pwsh --config C:/Users/lecav/AppData/Local/Programs/oh-my-posh/themes/craver.omp.json | Invoke-Expression
-# oh-my-posh --init --shell pwsh --config C:/Users/lecav/OneDrive/blue-owl.omp.json | Invoke-Expression
+# oh-my-posh --init --shell pwsh --config C:/Users/lecav/AppData/Local/Programs/oh-my-posh/themes/patriksvensson.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config C:/Users/lecav/OneDrive/takuya.omp.json | Invoke-Expression
 
 # Chocolatey profile
 $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
