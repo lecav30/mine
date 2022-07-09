@@ -178,12 +178,6 @@
   "vim.useSystemClipboard": true,
   // "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    // {
-    //   "before": ["j", "j"],
-    //   "after": ["<Esc>"]
-    // }
-  ],
   "vim.normalModeKeyBindings": [
     {
       "before": ["leader", "w"],
@@ -208,7 +202,8 @@
     "<C-a>": false,
     "<C-b>": false,
     "<C-h>": false,
-    "<C-k>": false
+    "<C-k>": false,
+    "<C-f>": false
   },
   /* TERMINAL */
   // Terminal Integrada
@@ -261,7 +256,7 @@
   "window.titleSeparator": " ~ ",
   "explorer.confirmDelete": false,
   "workbench.activityBar.visible": false,
-  "editor.cursorStyle": "underline",
+  "editor.cursorStyle": "line",
   /* OTROS */
   "security.workspace.trust.untrustedFiles": "open"
 }
