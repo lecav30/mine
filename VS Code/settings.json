@@ -49,6 +49,8 @@
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_style": "file",
   "[cpp]": {
     "editor.wordBasedSuggestions": false,
@@ -75,6 +77,11 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
+  },
   // python
   "[python]": {
     // "editor.defaultFormatter": "",
@@ -82,7 +89,8 @@
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
   },
-  "python.defaultInterpreterPath": "C:\\Users\\juanj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
+  // "python.defaultInterpreterPath": "C:\\Users\\juanj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
 
   /* Extensión pylint (configuración para ejercicios pygame) */
   "python.linting.pylintArgs": [
@@ -158,7 +166,6 @@
   "code-runner.fileDirectoryAsCwd": true,
   /* POLACODE */
   "polacode.backgroundColor": "#ffffff",
-  "polacode.target": "snippet",
   /* LIVESERVER */
   "liveServer.settings.donotShowInfoMsg": true,
   /* LIVESHARE */
@@ -204,7 +211,7 @@
   // Terminal Integrada
   "terminal.explorerKind": "integrated",
   "terminal.integrated.fontFamily": "Hack NF",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
@@ -245,7 +252,7 @@
   },
   /* PERSONALIZATION */
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "workbench.colorTheme": "Monokai",
   "workbench.iconTheme": "material-icon-theme",
   "window.menuBarVisibility": "compact",
   "window.titleSeparator": " ~ ",
