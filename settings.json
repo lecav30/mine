@@ -56,7 +56,7 @@
     "defaults": {
       "colorScheme": "Vintage",
       "cursorColor": "#FFFFFF",
-      "cursorShape": "vintage",
+      "cursorShape": "bar",
       "experimental.retroTerminalEffect": false,
       "font": {
         // UbuntuMono Nerd Font Mono
