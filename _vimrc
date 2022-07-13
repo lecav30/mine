@@ -63,7 +63,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
-colorscheme elflord
+colorscheme blue
 syntax on
 
 filetype indent on
