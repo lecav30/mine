@@ -17,5 +17,5 @@ Set-PSReadLineOption -PredictionSource History
 # Set-PSReadLineOption -PredictionViewStyle ListView
 
 # Alias
-Set-Alias -Name vi -Value nvim
+Set-Alias -Name v -Value nvim
 Set-Alias -Name touch -Value New-Item
