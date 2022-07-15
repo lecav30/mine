@@ -259,6 +259,7 @@
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "right",
   "editor.rulers": [90],
+  "editor.lineNumbers": "relative",
   /* OTROS */
   "security.workspace.trust.untrustedFiles": "open"
 }
