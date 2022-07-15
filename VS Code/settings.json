@@ -49,8 +49,6 @@
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "C_Cpp.default.intelliSenseMode": "gcc-x64",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_style": "file",
   "[cpp]": {
     "editor.wordBasedSuggestions": false,
@@ -89,7 +87,6 @@
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
   },
-  "python.defaultInterpreterPath": "C:\\Python310\\python.exe",
   // "python.defaultInterpreterPath": "C:\\Users\\juanj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
 
   /* Extensión pylint (configuración para ejercicios pygame) */
@@ -205,7 +202,8 @@
     "<C-b>": false,
     "<C-h>": false,
     "<C-k>": false,
-    "<C-f>": false
+    "<C-f>": false,
+    "<C-j>": false
   },
   /* TERMINAL */
   // Terminal Integrada
@@ -252,13 +250,15 @@
   },
   /* PERSONALIZATION */
   "editor.minimap.enabled": false,
-  "workbench.colorTheme": "Monokai",
+  "workbench.colorTheme": "Polykai",
   "workbench.iconTheme": "material-icon-theme",
-  "window.menuBarVisibility": "compact",
   "window.titleSeparator": " ~ ",
   "explorer.confirmDelete": false,
-  "workbench.activityBar.visible": false,
   "editor.cursorStyle": "line",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.sideBar.location": "right",
+  "editor.rulers": [90],
   /* OTROS */
   "security.workspace.trust.untrustedFiles": "open"
 }
