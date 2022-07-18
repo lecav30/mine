@@ -54,7 +54,7 @@
   "language": "es-ES",
   "profiles": {
     "defaults": {
-      "colorScheme": "Vintage",
+      "colorScheme": "One Half Dark",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
       "experimental.retroTerminalEffect": false,
