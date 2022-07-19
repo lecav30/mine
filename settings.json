@@ -54,7 +54,7 @@
   "language": "es-ES",
   "profiles": {
     "defaults": {
-      "colorScheme": "One Half Dark",
+      "colorScheme": "UbuntuLegit",
       "cursorColor": "#FFFFFF",
       "cursorShape": "bar",
       "experimental.retroTerminalEffect": false,
