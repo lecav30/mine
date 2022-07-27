@@ -1,518 +1,264 @@
 {
-  "$help": "https://aka.ms/terminal-documentation",
-  "$schema": "https://aka.ms/terminal-profiles-schema",
-  "actions": [
-    {
-      "command": {
-        "action": "copy",
-        "singleLine": false
-      }
-    },
-    {
-      "command": "unbound",
-      "keys": "ctrl+v"
-    },
-    {
-      "command": "unbound",
-      "keys": "ctrl+c"
-    },
-    {
-      "command": "paste"
-    },
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "right"
-      },
-      "keys": "alt+shift+v"
-    },
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "down"
-      },
-      "keys": "alt+shift+h"
-    },
-    {
-      "command": "find",
-      "keys": "ctrl+shift+f"
-    },
-    {
-      "command": {
-        "action": "splitPane",
-        "split": "auto",
-        "splitMode": "duplicate"
-      },
-      "keys": "alt+shift+d"
-    }
-  ],
-  "copyFormatting": "none",
-  "copyOnSelect": false,
-  "defaultProfile": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
-  "initialCols": 125,
-  "initialRows": 35,
-  "language": "es-ES",
-  "profiles": {
-    "defaults": {
-      "colorScheme": "UbuntuLegit",
-      "cursorColor": "#FFFFFF",
-      "cursorShape": "bar",
-      "experimental.retroTerminalEffect": false,
-      "font": {
-        // UbuntuMono Nerd Font Mono
-        // MesloLGLDZ Nerd Font Mono
-        // CodeNewRoman Nerd Font Mono
-        // Hack Nerd Font Mono
-        // Monoid Nerd Font
-        // Lekton Nerd Font Mono 
-        "face": "Hack Nerd Font Mono",
-        "size": 11
-      },
-      "opacity": 70,
-      "padding": "8, 8, 8, 8",
-      "startingDirectory": "%USERPROFILE%",
-      "useAcrylic": true
-    },
-    "list": [
-      {
-        "commandline": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
-        "guid": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
-        "icon": "ms-appx:///ProfileIcons/pwsh.png",
-        "name": "PowerShell 7"
-      },
-      {
-        "commandline": "bash.exe",
-        "guid": "{91073180-99d8-49fe-86cc-1a804e25de13}",
-        "hidden": false,
-        "icon": "C:/Program Files/Git/mingw64/share/git/git-for-windows.ico",
-        "name": "Git Bash"
-      },
-      {
-        "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-        "hidden": false,
-        "name": "PowerShell"
-      },
-      {
-        "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-        "hidden": false,
-        "name": "Command Prompt"
-      },
-      {
-        "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-        "hidden": false,
-        "name": "Azure Cloud Shell",
-        "source": "Windows.Terminal.Azure"
-      },
-      {
-        "guid": "{c15854ab-9c4f-57f4-8063-17b4f8edb1da}",
-        "hidden": false,
-        "name": "Developer Command Prompt for VS 2022",
-        "source": "Windows.Terminal.VisualStudio"
-      },
-      {
-        "guid": "{ea966061-b3e7-533d-919b-07f418b72957}",
-        "hidden": false,
-        "name": "Developer PowerShell for VS 2022",
-        "source": "Windows.Terminal.VisualStudio"
-      }
-    ]
+  /* COMENTARIOS */
+  /*
+  https: //sourceforge.net/projects/mingw/
+  Para compilar programas en c++ en powershell o cmd usa el code runner
+  Para compilar programas en c++ en bash usa:
+  g++ "nombre del archivo".cpp -o "nombre que le daras al archivo exe"
+  Para ejecutar el programa en la terminal:
+  (debes estar en el directorio) ./"nombre que le daras al archivo exe"
+  g++ helloWorld.cpp -o helloWorld | ./helloWorld.exe
+  */
+  /*
+  Por si la cagas en quitar los errores:
+  Ctrl Shift P
+  C/C++:Enabled Error Squiggles
+  */
+  /* SETTINGS */
+  "workbench.settings.editor": "json",
+  "editor.insertSpaces": true,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 4,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.fontSize": 18,
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": false,
+  // UbuntuMono Nerd Font Mono
+  // MesloLGLDZ Nerd Font Mono
+  // CodeNewRoman Nerd Font Mono
+  // Hack Nerd Font Mono
+  // Monoid Nerd Font
+  // Lekton Nerd Font Mono
+  // MonoLisa
+  // Dank Mono
+  // Iosevka
+  // CodeNewRoman Nerd Font
+  // agave Nerd Font
+  // Fira Code
+  // CaskaydiaCove Nerd Font Mono
+  // Binchotan_Sharp
+  // Mononoki Nerd Font
+  "editor.fontFamily": "Mononoki Nerd Font",
+  /* FORMATOS */
+  "[csv]": {
+    "editor.insertSpaces": false
   },
-  "schemes": [
+  /* LENGUAJES/FILES */
+  // C++
+  "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "C_Cpp.clang_format_style": "file",
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true,
+    "files.insertFinalNewline": true
+  },
+  // html
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  // javascript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // css
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 2
+  },
+  // json
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // markdown
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.wordWrap": "on"
+  },
+  // python
+  "[python]": {
+    // "editor.defaultFormatter": "",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+    "files.insertFinalNewline": true
+  },
+  // "python.defaultInterpreterPath": "C:\\Users\\juanj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+
+  /* Extensión pylint (configuración para ejercicios pygame) */
+  "python.linting.pylintArgs": [
+    "--extension-pkg-whitelist=pygame",
+    "--disable=C0103, C0114, C0115, C0116"
+    // Pylint features. Pylint global options and switches
+    // http://pylint.pycqa.org/en/2.4/technical_reference/features.html
+    // http://pylint.pycqa.org/en/latest/technical_reference/features.html
+    // C0103: invalid-name - Used when the name doesn't conform to naming rules associated to its type (constant, variable, class...).
+    // C0114: missing-module-docstring - Used when a module has no docstring.Empty modules do not require a docstring.
+    // C0115: missing-class-docstring - Used when a class has no docstring.Even an empty class must have a docstring.
+    // C0116: missing-function-docstring - Used when a function or method has no docstring.Some special methods like __init__ do not require a docstring.
+  ],
+
+  /* MULTI COMAND */
+  "multiCommand.commands": [
     {
-      "background": "#0C0C0C",
-      "black": "#0C0C0C",
-      "blue": "#0037DA",
-      "brightBlack": "#767676",
-      "brightBlue": "#3B78FF",
-      "brightCyan": "#61D6D6",
-      "brightGreen": "#16C60C",
-      "brightPurple": "#B4009E",
-      "brightRed": "#E74856",
-      "brightWhite": "#F2F2F2",
-      "brightYellow": "#F9F1A5",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#3A96DD",
-      "foreground": "#CCCCCC",
-      "green": "#13A10E",
-      "name": "Campbell",
-      "purple": "#881798",
-      "red": "#C50F1F",
-      "selectionBackground": "#FFFFFF",
-      "white": "#CCCCCC",
-      "yellow": "#C19C00"
+      "command": "multiCommand.clearTerminal",
+      "sequence": [
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "clear\u000D"
+          }
+        },
+        "workbench.action.focusActiveEditorGroup"
+      ]
     },
     {
-      "background": "#012456",
-      "black": "#0C0C0C",
-      "blue": "#0037DA",
-      "brightBlack": "#767676",
-      "brightBlue": "#3B78FF",
-      "brightCyan": "#61D6D6",
-      "brightGreen": "#16C60C",
-      "brightPurple": "#B4009E",
-      "brightRed": "#E74856",
-      "brightWhite": "#F2F2F2",
-      "brightYellow": "#F9F1A5",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#3A96DD",
-      "foreground": "#CCCCCC",
-      "green": "#13A10E",
-      "name": "Campbell Powershell",
-      "purple": "#881798",
-      "red": "#C50F1F",
-      "selectionBackground": "#FFFFFF",
-      "white": "#CCCCCC",
-      "yellow": "#C19C00"
+      "command": "multiCommand.pythonExecuteInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
+          }
+        },
+        "workbench.action.focusActiveEditorGroup"
+      ]
     },
     {
-      "background": "#282A36",
-      "black": "#21222C",
-      "blue": "#BD93F9",
-      "brightBlack": "#6272A4",
-      "brightBlue": "#D6ACFF",
-      "brightCyan": "#A4FFFF",
-      "brightGreen": "#69FF94",
-      "brightPurple": "#FF92DF",
-      "brightRed": "#FF6E6E",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#FFFFA5",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#8BE9FD",
-      "foreground": "#F8F8F2",
-      "green": "#50FA7B",
-      "name": "Dracula",
-      "purple": "#FF79C6",
-      "red": "#FF5555",
-      "selectionBackground": "#FFFFFF",
-      "white": "#F8F8F2",
-      "yellow": "#F1FA8C"
+      "command": "multiCommand.pythonExecuteAndFocusInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
+          }
+        }
+      ]
     },
     {
-      "background": "#282C34",
-      "black": "#282C34",
-      "blue": "#61AFEF",
-      "brightBlack": "#5A6374",
-      "brightBlue": "#61AFEF",
-      "brightCyan": "#56B6C2",
-      "brightGreen": "#98C379",
-      "brightPurple": "#C678DD",
-      "brightRed": "#E06C75",
-      "brightWhite": "#DCDFE4",
-      "brightYellow": "#E5C07B",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#56B6C2",
-      "foreground": "#DCDFE4",
-      "green": "#98C379",
-      "name": "One Half Dark",
-      "purple": "#C678DD",
-      "red": "#E06C75",
-      "selectionBackground": "#FFFFFF",
-      "white": "#DCDFE4",
-      "yellow": "#E5C07B"
-    },
-    {
-      "background": "#FAFAFA",
-      "black": "#383A42",
-      "blue": "#0184BC",
-      "brightBlack": "#4F525D",
-      "brightBlue": "#61AFEF",
-      "brightCyan": "#56B5C1",
-      "brightGreen": "#98C379",
-      "brightPurple": "#C577DD",
-      "brightRed": "#DF6C75",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#E4C07A",
-      "cursorColor": "#4F525D",
-      "cyan": "#0997B3",
-      "foreground": "#383A42",
-      "green": "#50A14F",
-      "name": "One Half Light",
-      "purple": "#A626A4",
-      "red": "#E45649",
-      "selectionBackground": "#FFFFFF",
-      "white": "#FAFAFA",
-      "yellow": "#C18301"
-    },
-    {
-      "background": "#1E2127",
-      "black": "#1E2127",
-      "blue": "#61AFEF",
-      "brightBlack": "#5C6370",
-      "brightBlue": "#61AFEF",
-      "brightCyan": "#56B6C2",
-      "brightGreen": "#98C379",
-      "brightPurple": "#C678DD",
-      "brightRed": "#E06C75",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#D19A66",
-      "cursorColor": "#AAAAAA",
-      "cyan": "#56B6C2",
-      "foreground": "#ABB2BF",
-      "green": "#98C379",
-      "name": "OneDark",
-      "purple": "#C678DD",
-      "red": "#E06C75",
-      "selectionBackground": "#FFFFFF",
-      "white": "#ABB2BF",
-      "yellow": "#D19A66"
-    },
-    {
-      "background": "#F9F9F9",
-      "black": "#000000",
-      "blue": "#2F5AF3",
-      "brightBlack": "#000000",
-      "brightBlue": "#2F5AF3",
-      "brightCyan": "#3F953A",
-      "brightGreen": "#3F953A",
-      "brightPurple": "#A00095",
-      "brightRed": "#DE3E35",
-      "brightWhite": "#AAAAAA",
-      "brightYellow": "#44B4CC",
-      "cursorColor": "#AAAAAA",
-      "cyan": "#3F953A",
-      "foreground": "#2A2C33",
-      "green": "#3F953A",
-      "name": "OneLight",
-      "purple": "#950095",
-      "red": "#DE3E35",
-      "selectionBackground": "#FFFFFF",
-      "white": "#BBBBBB",
-      "yellow": "#D2B67C"
-    },
-    {
-      "background": "#000000",
-      "black": "#00FF00",
-      "blue": "#00FF00",
-      "brightBlack": "#00FF00",
-      "brightBlue": "#00FF00",
-      "brightCyan": "#00FF00",
-      "brightGreen": "#00FF00",
-      "brightPurple": "#00FF00",
-      "brightRed": "#00FF00",
-      "brightWhite": "#00FF00",
-      "brightYellow": "#00FF00",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#00FF00",
-      "foreground": "#00FF00",
-      "green": "#00FF00",
-      "name": "Retro",
-      "purple": "#00FF00",
-      "red": "#00FF00",
-      "selectionBackground": "#FFFFFF",
-      "white": "#00FF00",
-      "yellow": "#00FF00"
-    },
-    {
-      "background": "#002B36",
-      "black": "#002B36",
-      "blue": "#268BD2",
-      "brightBlack": "#073642",
-      "brightBlue": "#839496",
-      "brightCyan": "#93A1A1",
-      "brightGreen": "#586E75",
-      "brightPurple": "#6C71C4",
-      "brightRed": "#CB4B16",
-      "brightWhite": "#FDF6E3",
-      "brightYellow": "#657B83",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#2AA198",
-      "foreground": "#839496",
-      "green": "#859900",
-      "name": "Solarized Dark",
-      "purple": "#D33682",
-      "red": "#DC322F",
-      "selectionBackground": "#FFFFFF",
-      "white": "#EEE8D5",
-      "yellow": "#B58900"
-    },
-    {
-      "background": "#FDF6E3",
-      "black": "#002B36",
-      "blue": "#268BD2",
-      "brightBlack": "#073642",
-      "brightBlue": "#839496",
-      "brightCyan": "#93A1A1",
-      "brightGreen": "#586E75",
-      "brightPurple": "#6C71C4",
-      "brightRed": "#CB4B16",
-      "brightWhite": "#FDF6E3",
-      "brightYellow": "#657B83",
-      "cursorColor": "#002B36",
-      "cyan": "#2AA198",
-      "foreground": "#657B83",
-      "green": "#859900",
-      "name": "Solarized Light",
-      "purple": "#D33682",
-      "red": "#DC322F",
-      "selectionBackground": "#FFFFFF",
-      "white": "#EEE8D5",
-      "yellow": "#B58900"
-    },
-    {
-      "background": "#000000",
-      "black": "#000000",
-      "blue": "#3465A4",
-      "brightBlack": "#555753",
-      "brightBlue": "#729FCF",
-      "brightCyan": "#34E2E2",
-      "brightGreen": "#8AE234",
-      "brightPurple": "#AD7FA8",
-      "brightRed": "#EF2929",
-      "brightWhite": "#EEEEEC",
-      "brightYellow": "#FCE94F",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#06989A",
-      "foreground": "#D3D7CF",
-      "green": "#4E9A06",
-      "name": "Tango Dark",
-      "purple": "#75507B",
-      "red": "#CC0000",
-      "selectionBackground": "#FFFFFF",
-      "white": "#D3D7CF",
-      "yellow": "#C4A000"
-    },
-    {
-      "background": "#FFFFFF",
-      "black": "#000000",
-      "blue": "#3465A4",
-      "brightBlack": "#555753",
-      "brightBlue": "#729FCF",
-      "brightCyan": "#34E2E2",
-      "brightGreen": "#8AE234",
-      "brightPurple": "#AD7FA8",
-      "brightRed": "#EF2929",
-      "brightWhite": "#EEEEEC",
-      "brightYellow": "#FCE94F",
-      "cursorColor": "#000000",
-      "cyan": "#06989A",
-      "foreground": "#555753",
-      "green": "#4E9A06",
-      "name": "Tango Light",
-      "purple": "#75507B",
-      "red": "#CC0000",
-      "selectionBackground": "#FFFFFF",
-      "white": "#D3D7CF",
-      "yellow": "#C4A000"
-    },
-    {
-      "background": "#2C001E",
-      "black": "#EEEEEC",
-      "blue": "#268BD2",
-      "brightBlack": "#002B36",
-      "brightBlue": "#839496",
-      "brightCyan": "#93A1A1",
-      "brightGreen": "#586E75",
-      "brightPurple": "#6C71C4",
-      "brightRed": "#CB4B16",
-      "brightWhite": "#FDF6E3",
-      "brightYellow": "#657B83",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#2AA198",
-      "foreground": "#EEEEEC",
-      "green": "#729FCF",
-      "name": "Ubuntu",
-      "purple": "#D33682",
-      "red": "#16C60C",
-      "selectionBackground": "#FFFFFF",
-      "white": "#EEE8D5",
-      "yellow": "#B58900"
-    },
-    {
-      "background": "#2C001E",
-      "black": "#4E9A06",
-      "blue": "#3465A4",
-      "brightBlack": "#555753",
-      "brightBlue": "#729FCF",
-      "brightCyan": "#34E2E2",
-      "brightGreen": "#8AE234",
-      "brightPurple": "#AD7FA8",
-      "brightRed": "#EF2929",
-      "brightWhite": "#EEEEEE",
-      "brightYellow": "#FCE94F",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#06989A",
-      "foreground": "#EEEEEE",
-      "green": "#300A24",
-      "name": "UbuntuLegit",
-      "purple": "#75507B",
-      "red": "#CC0000",
-      "selectionBackground": "#FFFFFF",
-      "white": "#D3D7CF",
-      "yellow": "#C4A000"
-    },
-    {
-      "background": "#000000",
-      "black": "#878787",
-      "blue": "#44B4CC",
-      "brightBlack": "#555555",
-      "brightBlue": "#0000FF",
-      "brightCyan": "#00FFFF",
-      "brightGreen": "#00FF00",
-      "brightPurple": "#FF00FF",
-      "brightRed": "#FF0000",
-      "brightWhite": "#E5E5E5",
-      "brightYellow": "#FFFF00",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#44B4CC",
-      "foreground": "#FFFFFF",
-      "green": "#CCFF04",
-      "name": "VibrantInk",
-      "purple": "#9933CC",
-      "red": "#FF6600",
-      "selectionBackground": "#FFFFFF",
-      "white": "#F5F5F5",
-      "yellow": "#FFCC00"
-    },
-    {
-      "background": "#FFFFFF",
-      "black": "#878787",
-      "blue": "#44B4CC",
-      "brightBlack": "#555555",
-      "brightBlue": "#0000FF",
-      "brightCyan": "#00FFFF",
-      "brightGreen": "#FF6600",
-      "brightPurple": "#FF00FF",
-      "brightRed": "#FF0000",
-      "brightWhite": "#E5E5E5",
-      "brightYellow": "#0000FF",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#FF6600",
-      "foreground": "#000000",
-      "green": "#CCFF04",
-      "name": "VibrantInkLight",
-      "purple": "#9933CC",
-      "red": "#FF6600",
-      "selectionBackground": "#FFFFFF",
-      "white": "#F5F5F5",
-      "yellow": "#FFCC00"
-    },
-    {
-      "background": "#000000",
-      "black": "#000000",
-      "blue": "#000080",
-      "brightBlack": "#808080",
-      "brightBlue": "#0000FF",
-      "brightCyan": "#00FFFF",
-      "brightGreen": "#00FF00",
-      "brightPurple": "#FF00FF",
-      "brightRed": "#FF0000",
-      "brightWhite": "#FFFFFF",
-      "brightYellow": "#FFFF00",
-      "cursorColor": "#FFFFFF",
-      "cyan": "#008080",
-      "foreground": "#C0C0C0",
-      "green": "#008000",
-      "name": "Vintage",
-      "purple": "#800080",
-      "red": "#800000",
-      "selectionBackground": "#FFFFFF",
-      "white": "#C0C0C0",
-      "yellow": "#808000"
+      "command": "multiCommand.pythonMptcInTerminal",
+      "sequence": [
+        "workbench.action.terminal.focus",
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "cd '${fileDirname}'\u000Dclear\u000Dmptc '${fileBasename}' "
+          }
+        }
+      ]
     }
   ],
-  "startOnUserLogin": true,
-  "tabWidthMode": "titleLength",
-  "theme": "dark",
-  "useAcrylicInTabRow": true,
-  "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502"
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  /* CODE RUNNER */
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.fileDirectoryAsCwd": true,
+  /* POLACODE */
+  "polacode.backgroundColor": "#ffffff",
+  /* LIVESERVER */
+  "liveServer.settings.donotShowInfoMsg": true,
+  /* LIVESHARE */
+  "liveshare.connectionMode": "relay",
+  /* COLORIZE */
+  "colorize.languages": ["javascript", "css", "json"],
+  /* TABNINE */
+  "tabnine.experimentalAutoImports": true,
+  /* VIM */
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  // "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"],
+      "silent": true
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-b>": false,
+    "<C-h>": false,
+    "<C-k>": false,
+    "<C-f>": false,
+    "<C-j>": false
+  },
+  /* TERMINAL */
+  // Terminal Integrada
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  // "PowerShell", "Windows PowerShell", "Git Bash", "Command Prompt", "JavaScript Debug Terminal".
+  "terminal.integrated.profiles.windows": {
+    "Pwsh7": {
+      "source": "PowerShell7",
+      "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  // Terminal Externa
+  // "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "terminal.external.windowsExec": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  /* PERSONALIZATION */
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "ayu",
+  "window.titleSeparator": " ~ ",
+  "explorer.confirmDelete": false,
+  "editor.cursorStyle": "line",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.rulers": [90],
+  "editor.lineNumbers": "relative",
+  "window.menuBarVisibility": "compact",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Ayu Dark Bordered"
 }
