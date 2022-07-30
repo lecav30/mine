@@ -9,3 +9,6 @@ This repository is about other configurations that I need for several applicatio
 - Windows Terminal 
 - Git Bash
 - PowerShell 7
+- Alacritty
+- Fish
+- Tmux
