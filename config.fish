@@ -3,3 +3,4 @@ if status is-interactive
 end
 
 alias vi="nvim"
+alias ll="exa --long --header --git"
