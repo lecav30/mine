@@ -3,7 +3,7 @@ window:
     x: 5
     y: 5
   dimensions:
-    columns: 100
+    columns: 125
     lines: 85
   decorations: none
   opacity: 0.8
@@ -16,16 +16,20 @@ tabspaces: 4
 
 font:
   normal:
-    family: mononoki Nerd Font
+    # family: mononoki Nerd Font
+    family: agave Nerd Font
     style:  Regular
   bold:
-    family: mononoki Nerd Font
+    # family: mononoki Nerd Font
+    family: agave Nerd Font
     style:  Bold
   italic:
-    family: mononoki Nerd Font
+    # family: mononoki Nerd Font
+    family: agave Nerd Font
   bold_italic:
-    family: mononoki Nerd Font
-  size: 18
+    # family: mononoki Nerd Font
+    family: agave Nerd Font
+  size: 15
 
 draw_bold_text_with_bright_colors: true
 
@@ -56,7 +60,7 @@ colors:
     yellow:  '0xf7eb95'
     blue:    '0x7dc6bf'
     magenta: '0x6c71c4'
-    cyan:    '0x35434d'
+    cyan:    '0x00c3ff'
     white:   '0xffffff'
 
 selection:
