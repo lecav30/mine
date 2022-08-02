@@ -1,18 +1,7 @@
 {
   /* COMENTARIOS */
   /*
-  https: //sourceforge.net/projects/mingw/
-  Para compilar programas en c++ en powershell o cmd usa el code runner
-  Para compilar programas en c++ en bash usa:
-  g++ "nombre del archivo".cpp -o "nombre que le daras al archivo exe"
-  Para ejecutar el programa en la terminal:
-  (debes estar en el directorio) ./"nombre que le daras al archivo exe"
-  g++ helloWorld.cpp -o helloWorld | ./helloWorld.exe
-  */
-  /*
-  Por si la cagas en quitar los errores:
-  Ctrl Shift P
-  C/C++:Enabled Error Squiggles
+    C/C++:Enabled Error Squiggles
   */
   /* SETTINGS */
   "workbench.settings.editor": "json",
@@ -29,7 +18,7 @@
   // UbuntuMono Nerd Font Mono
   // MesloLGLDZ Nerd Font Mono
   // CodeNewRoman Nerd Font Mono
-  // Hack Nerd Font Mono
+  // Hack NF
   // Monoid Nerd Font
   // Lekton Nerd Font Mono
   // MonoLisa
@@ -39,8 +28,8 @@
   // agave Nerd Font
   // Fira Code
   // CaskaydiaCove Nerd Font Mono
-  // Binchotan_Sharp
   // Mononoki Nerd Font
+  // Monofur Nerd Font
   "editor.fontFamily": "Mononoki Nerd Font",
   /* FORMATOS */
   "[csv]": {
@@ -172,6 +161,14 @@
   "colorize.languages": ["javascript", "css", "json"],
   /* TABNINE */
   "tabnine.experimentalAutoImports": true,
+  /* INDENT RAINBOW */
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.7)",
+    "rgba(127,255,127,0.7)",
+    "rgba(255,127,255,0.7)",
+    "rgba(79,236,236,0.7)"
+  ],
   /* VIM */
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -209,8 +206,8 @@
   /* TERMINAL */
   // Terminal Integrada
   "terminal.explorerKind": "integrated",
-  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
-  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontSize": 18,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
@@ -251,14 +248,11 @@
   },
   /* PERSONALIZATION */
   "editor.minimap.enabled": false,
-  "workbench.iconTheme": "ayu",
+  "workbench.iconTheme": "material-icon-theme",
   "window.titleSeparator": " ~ ",
-  "explorer.confirmDelete": false,
   "editor.cursorStyle": "line",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.rulers": [90],
   "editor.lineNumbers": "relative",
-  "window.menuBarVisibility": "compact",
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Ayu Dark Bordered"
+  "workbench.colorTheme": "Monokai"
 }
