@@ -277,7 +277,7 @@ colors = init_colors()
 
 def init_widgets_defaults():
     return dict(font=myFont,
-                fontsize = 18,
+                fontsize = 21,
                 padding = 5,
                 background=colors[1])
 
@@ -287,11 +287,11 @@ def init_widgets_list():
     prompt = "{0}@{1}: ".format(os.environ["USER"], socket.gethostname())
     widgets_list = [
                widget.GroupBox(font=myFont,
-                        fontsize = 20,
+                        fontsize = 24,
                         margin_y = 2,
                         margin_x = 0,
                         padding_y = 8,
-                        padding_x = 5,
+                        padding_x = 8,
                         borderwidth = 2,
                         active = colors[9],
                         inactive = colors[5],
@@ -319,8 +319,9 @@ def init_widgets_list():
                         foreground = colors[2],
                         background = colors[1]
                         ),
-               widget.WindowName(font=myFont,
-                        fontsize = 15,
+               widget.WindowName(
+                        font=myFont,
+                        fontsize = 18,
                         foreground = colors[5],
                         background = colors[1],
                         ),
@@ -390,9 +391,9 @@ def init_widgets_list():
                #          background = colors[1]
                #          ),
                widget.Battery(
-                        font=myFont,
+                        font = myFont,
                         update_interval = 10,
-                        fontsize = 16,
+                        fontsize = 20,
                         foreground = colors[5],
                         background = colors[1],
 	                    ),
@@ -454,12 +455,11 @@ def init_widgets_list():
                         foreground=colors[3],
                         background=colors[1],
                         padding = 0,
-                        fontsize = 18
+                        fontsize = 19
                         ),
                widget.Clock(
                         foreground = colors[5],
                         background = colors[1],
-                        fontsize = 16,
                         format="%Y-%m-%d %H:%M"
                         ),
                # widget.Sep(
