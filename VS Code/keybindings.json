@@ -1,18 +1,5 @@
 // Place your key bindings in this file to override the defaults
 [
-  //
-  // Atajos de teclado recomendados para el curso Introducción a la programación con Python de www.mclibre.org
-  {
-    // Pasar el foco al terminal
-    "key": "ctrl+alt+]",
-    "command": "workbench.action.terminal.focus"
-  },
-  {
-    // Pasar el foco al editor de programa
-    "key": "ctrl+alt+[",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
-  },
   // Atajos para mejorar la experiencia del autocompletado
   {
     // Sugerencia previa de autocompletado
