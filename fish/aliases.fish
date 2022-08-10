@@ -32,6 +32,13 @@ alias vf='$EDITOR ~/.config/fish/config.fish'
 alias home='cd $home'
 alias vimfiles='cd ~/.config/nvim'
 
+# CP c++
+alias tcpp="./a.out < in.txt > out.txt"
+#usando pbcopy y pbpaste para copiar y pegar el contenido de un archivo
+alias pbcopy='xsel -b' 
+# uso pbcopy < file.cpp
+alias pbpaste='xsel -b -o'
+
 # Git
 alias g git
 alias ga "git add"
@@ -44,3 +51,4 @@ alias gcob "git checkout -b"
 alias gd "git diff"
 alias gp "git push"
 alias gpom "git pull origin main"
+
