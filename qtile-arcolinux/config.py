@@ -73,12 +73,17 @@ keys = [
     # Run Launcher
     Key([mod, "shift"], "Return",
         lazy.spawn("rofi -show drun"),
-        desc='Run Launcher'
+        desc='Run launcher'
         ),
     # Terminal
     Key([mod], "Return",
         lazy.spawn(myTerminal),
         desc='Launch terminal'
+        ),
+    # Dolphin
+    Key([mod], "e",
+        lazy.spawn("dolphin"),
+        desc='Launch file explorer'
         ),
 
 # SUPER + SHIFT KEYS
@@ -202,7 +207,7 @@ group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
 
 # Default
 # group_labels = ["", "", "", "", "", "", "", "", "", "",]
-group_labels = ["", "", "", "", "", "", "", "", "ﭮ", "",]
+group_labels = ["", "", "", "", " ", "", "", "", "ﭮ", "",]
 # group_labels = ["Web", "Edit/chat", "Image", "Gimp", "Meld", "Video", "Vb", "Files", "Mail", "Music",]
 
 group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall",]
@@ -469,9 +474,9 @@ def init_widgets_list():
                #          background = colors[1]
                #          ),
                widget.Systray(
-                        background=colors[1],
-                        icon_size = 23,
-                        padding = 4
+                        background = colors[1],
+                        icon_size = 20,
+                        padding = 6
                         ),
               ]
     return widgets_list
