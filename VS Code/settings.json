@@ -12,8 +12,8 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "Victor Mono",
-  "editor.fontSize": 18,
+  "editor.fontFamily": "agave Nerd Font",
+  "editor.fontSize": 20,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
   // UbuntuMono Nerd Font Mono
@@ -78,8 +78,6 @@
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
   },
-  // "python.defaultInterpreterPath": "C:\\Users\\juanj\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
-
   /* Extensión pylint (configuración para ejercicios pygame) */
   "python.linting.pylintArgs": [
     "--extension-pkg-whitelist=pygame",
@@ -92,62 +90,10 @@
     // C0115: missing-class-docstring - Used when a class has no docstring.Even an empty class must have a docstring.
     // C0116: missing-function-docstring - Used when a function or method has no docstring.Some special methods like __init__ do not require a docstring.
   ],
-
-  /* MULTI COMAND */
-  "multiCommand.commands": [
-    {
-      "command": "multiCommand.clearTerminal",
-      "sequence": [
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "clear\u000D"
-          }
-        },
-        "workbench.action.focusActiveEditorGroup"
-      ]
-    },
-    {
-      "command": "multiCommand.pythonExecuteInTerminal",
-      "sequence": [
-        "workbench.action.terminal.focus",
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
-          }
-        },
-        "workbench.action.focusActiveEditorGroup"
-      ]
-    },
-    {
-      "command": "multiCommand.pythonExecuteAndFocusInTerminal",
-      "sequence": [
-        "workbench.action.terminal.focus",
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "cd '${fileDirname}'\u000Dclear\u000Dpy '${fileBasename}'\u000D"
-          }
-        }
-      ]
-    },
-    {
-      "command": "multiCommand.pythonMptcInTerminal",
-      "sequence": [
-        "workbench.action.terminal.focus",
-        {
-          "command": "workbench.action.terminal.sendSequence",
-          "args": {
-            "text": "cd '${fileDirname}'\u000Dclear\u000Dmptc '${fileBasename}' "
-          }
-        }
-      ]
-    }
-  ],
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
+
   /* CODE RUNNER */
   "code-runner.runInTerminal": true,
   "code-runner.saveAllFilesBeforeRun": true,
@@ -178,12 +124,19 @@
   "vim.hlsearch": true,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["leader", "w"],
+      "before": ["leader", "w", "w"],
       "commands": ["workbench.action.files.save"]
     },
     {
-      "before": ["leader", "q"],
+      "before": ["leader", "q", "q"],
       "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "w", "q"],
+      "commands": [
+        "workbench.action.files.save",
+        "workbench.action.closeActiveEditor"
+      ]
     },
     {
       "before": ["leader", "e"],
@@ -212,6 +165,10 @@
   },
   "editor.tokenColorCustomizations": {
     "[Material Theme Darker]": {
+      "comments": {
+        // victor mono:
+        // "fontStyle": "italic bold"
+      },
       "textMateRules": [
         {
           "scope": [
@@ -284,10 +241,13 @@
   /* PERSONALIZATION */
   "editor.minimap.enabled": false,
   "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "window.titleSeparator": " ~ ",
+  "window.titleSeparator": " | ",
   "editor.cursorStyle": "line",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.rulers": [90],
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Material Theme Darker"
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.startupEditor": "none"
 }
