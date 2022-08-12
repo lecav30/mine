@@ -203,14 +203,18 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "cmder",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   // "PowerShell", "Windows PowerShell", "Git Bash", "Command Prompt", "JavaScript Debug Terminal".
   "terminal.integrated.profiles.windows": {
-    "Pwsh7": {
-      "source": "PowerShell7",
-      "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    "cmder": {
+      "path": "C:\\WINDOWS\\System32\\cmd.exe",
+      "args": ["/K", "C:\\cmder\\vendor\\bin\\vscode_init.cmd"]
     },
+    // "Pwsh7": {
+    //   "source": "PowerShell7",
+    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    // },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell",
@@ -231,7 +235,7 @@
   },
   // Terminal Externa
   // "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  "terminal.external.windowsExec": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
+  // "terminal.external.windowsExec": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
@@ -244,7 +248,7 @@
   "window.titleSeparator": " | ",
   "editor.cursorStyle": "line",
   "security.workspace.trust.untrustedFiles": "open",
-  "editor.rulers": [90],
+  // "editor.rulers": [90],
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Material Theme Darker",
   "workbench.activityBar.visible": false,
