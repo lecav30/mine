@@ -12,7 +12,7 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "agave Nerd Font",
+  "editor.fontFamily": "Mononoki Nerd Font",
   "editor.fontSize": 20,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
@@ -40,11 +40,13 @@
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "C_Cpp.clang_format_style": "file",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
+
   "[cpp]": {
     "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
+    "editor.defaultFormatter": "ms-vscode.cpptools",
     "files.insertFinalNewline": true
   },
   // html
@@ -77,21 +79,6 @@
     "editor.formatOnPaste": false,
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
-  },
-  /* Extensión pylint (configuración para ejercicios pygame) */
-  "python.linting.pylintArgs": [
-    "--extension-pkg-whitelist=pygame",
-    "--disable=C0103, C0114, C0115, C0116"
-    // Pylint features. Pylint global options and switches
-    // http://pylint.pycqa.org/en/2.4/technical_reference/features.html
-    // http://pylint.pycqa.org/en/latest/technical_reference/features.html
-    // C0103: invalid-name - Used when the name doesn't conform to naming rules associated to its type (constant, variable, class...).
-    // C0114: missing-module-docstring - Used when a module has no docstring.Empty modules do not require a docstring.
-    // C0115: missing-class-docstring - Used when a class has no docstring.Even an empty class must have a docstring.
-    // C0116: missing-function-docstring - Used when a function or method has no docstring.Some special methods like __init__ do not require a docstring.
-  ],
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
   },
 
   /* CODE RUNNER */
@@ -143,8 +130,20 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["leader", "c", "l"],
+      "commands": ["editor.action.commentLine"],
+      "silent": true
+    },
+    {
       "before": [":"],
       "commands": ["workbench.action.showCommands"],
+      "silent": true
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["leader", "c", "l"],
+      "commands": ["editor.action.commentLine"],
       "silent": true
     }
   ],
@@ -157,13 +156,18 @@
     "<C-f>": false,
     "<C-j>": false
   },
-  /* Material Theme */
+  /* Custom themes */
   "workbench.colorCustomizations": {
     "[Material Theme Darker]": {
       "editorCursor.foreground": "#ffffff"
     }
   },
   "editor.tokenColorCustomizations": {
+    "[Dracula]": {
+      "comments": {
+        "fontStyle": "italic"
+      }
+    },
     "[Material Theme Darker]": {
       "comments": {
         // victor mono:
@@ -203,14 +207,10 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "cmder",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   // "PowerShell", "Windows PowerShell", "Git Bash", "Command Prompt", "JavaScript Debug Terminal".
   "terminal.integrated.profiles.windows": {
-    "cmder": {
-      "path": "C:\\WINDOWS\\System32\\cmd.exe",
-      "args": ["/K", "C:\\cmder\\vendor\\bin\\vscode_init.cmd"]
-    },
     // "Pwsh7": {
     //   "source": "PowerShell7",
     //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
@@ -250,7 +250,7 @@
   "security.workspace.trust.untrustedFiles": "open",
   // "editor.rulers": [90],
   "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.colorTheme": "Dracula",
   "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "compact",
   "workbench.startupEditor": "none"
