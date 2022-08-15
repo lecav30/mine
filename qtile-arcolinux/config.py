@@ -43,7 +43,7 @@ mod2 = "control"
 home = os.path.expanduser('~')
 myTerminal = 'alacritty' # My terminal
 myBrowser = 'brave' # My browser
-myFont = 'agave Nerd Font' # My nerd font
+myFont = 'mononoki Nerd Font' # My nerd font
 
 @lazy.function
 def window_to_prev_group(qtile):
@@ -207,7 +207,7 @@ group_names = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0",]
 
 # Default
 # group_labels = ["", "", "", "", "", "", "", "", "", "",]
-group_labels = ["", "", "", "", " ", "", "", "", "ﭮ", "",]
+group_labels = ["", "", "", "", "", "", "", "", "ﭮ", "",]
 # group_labels = ["Web", "Edit/chat", "Image", "Gimp", "Meld", "Video", "Vb", "Files", "Mail", "Music",]
 
 group_layouts = ["monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall", "monadtall",]
@@ -451,7 +451,8 @@ def init_widgets_list():
 
                widget.KeyboardLayout(
                         background=colors[1],
-                        configured_keyboards = ['us', 'latam'],
+                        # configured_keyboards = ['us', 'latam'],
+                        configured_keyboards = ['latam'],
                         fmt = 'Keyboard: {}',
                         padding = 5
                         ),
