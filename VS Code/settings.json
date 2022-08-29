@@ -39,6 +39,8 @@
   /* LENGUAJES/FILES */
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
 
@@ -70,8 +72,7 @@
   },
   // markdown
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.wordWrap": "on"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // python
   "[python]": {
@@ -202,14 +203,13 @@
   /* TERMINAL */
   // Terminal Integrada
   "terminal.explorerKind": "integrated",
-  "terminal.integrated.fontFamily": "Hack NF",
+  "terminal.integrated.fontFamily": "Mononoki Nerd Font",
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.defaultProfile.windows": "Git Bash",
   "terminal.integrated.enableMultiLinePasteWarning": false,
-  // "PowerShell", "Windows PowerShell", "Git Bash", "Command Prompt", "JavaScript Debug Terminal".
   "terminal.integrated.profiles.windows": {
     // "Pwsh7": {
     //   "source": "PowerShell7",
@@ -234,24 +234,20 @@
     }
   },
   // Terminal Externa
-  // "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-  // "terminal.external.windowsExec": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,
     "**/.settings": true,
     "**/.factorypath": true
   },
-  /* PERSONALIZATION */
-  "editor.minimap.enabled": false,
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.iconTheme": "material-icon-theme",
   "window.titleSeparator": " | ",
   "editor.cursorStyle": "line",
   "security.workspace.trust.untrustedFiles": "open",
   // "editor.rulers": [90],
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Dracula",
-  "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "compact",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "editor.minimap.enabled": false
 }
