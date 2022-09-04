@@ -12,8 +12,8 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "Mononoki Nerd Font",
-  "editor.fontSize": 20,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontSize": 18,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
   // UbuntuMono Nerd Font Mono
@@ -27,7 +27,7 @@
   // Iosevka
   // CodeNewRoman Nerd Font
   // agave Nerd Font
-  // Fira Code
+  // FiraCode Nerd Font Mono
   // CaskaydiaCove Nerd Font Mono
   // Mononoki Nerd Font
   // Monofur Nerd Font
@@ -39,8 +39,6 @@
   /* LENGUAJES/FILES */
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
-  "C_Cpp.default.intelliSenseMode": "gcc-x64",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
 
@@ -96,14 +94,6 @@
   "colorize.languages": ["javascript", "css", "json"],
   /* TABNINE */
   "tabnine.experimentalAutoImports": true,
-  /* INDENT RAINBOW */
-  "indentRainbow.indicatorStyle": "light",
-  "indentRainbow.colors": [
-    "rgba(255,255,64,0.7)",
-    "rgba(127,255,127,0.7)",
-    "rgba(255,127,255,0.7)",
-    "rgba(79,236,236,0.7)"
-  ],
   /* VIM */
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -249,5 +239,8 @@
   "workbench.colorTheme": "Dracula",
   "window.menuBarVisibility": "compact",
   "workbench.startupEditor": "none",
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveBracketPair": true
 }
