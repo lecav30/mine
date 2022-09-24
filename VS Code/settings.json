@@ -12,8 +12,8 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "FiraCode Nerd Font Mono",
-  "editor.fontSize": 18,
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 19,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
   // UbuntuMono Nerd Font Mono
@@ -32,6 +32,7 @@
   // Mononoki Nerd Font
   // Monofur Nerd Font
   // Victor Mono
+  // Cartograph CF Light
   /* FORMATOS */
   "[csv]": {
     "editor.insertSpaces": false
@@ -39,9 +40,10 @@
   /* LENGUAJES/FILES */
   // C++
   "C_Cpp.errorSquiggles": "Enabled",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
-
   "[cpp]": {
     "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
@@ -65,11 +67,22 @@
     "editor.tabSize": 2
   },
   // json
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   // markdown
   "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // vue
+  "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // python
@@ -79,7 +92,6 @@
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
   },
-
   /* CODE RUNNER */
   "code-runner.runInTerminal": true,
   "code-runner.saveAllFilesBeforeRun": true,
@@ -91,7 +103,11 @@
   /* LIVESHARE */
   "liveshare.connectionMode": "relay",
   /* COLORIZE */
-  "colorize.languages": ["javascript", "css", "json"],
+  "colorize.languages": [
+    "javascript",
+    "css",
+    "json"
+  ],
   /* TABNINE */
   "tabnine.experimentalAutoImports": true,
   /* VIM */
@@ -102,39 +118,67 @@
   "vim.hlsearch": true,
   "vim.normalModeKeyBindings": [
     {
-      "before": ["leader", "w", "w"],
-      "commands": ["workbench.action.files.save"]
+      "before": [
+        "leader",
+        "w",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
     },
     {
-      "before": ["leader", "q", "q"],
-      "commands": ["workbench.action.closeActiveEditor"]
+      "before": [
+        "leader",
+        "q",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
     },
     {
-      "before": ["leader", "w", "q"],
+      "before": [
+        "leader",
+        "w",
+        "q"
+      ],
       "commands": [
         "workbench.action.files.save",
         "workbench.action.closeActiveEditor"
       ]
     },
     {
-      "before": ["leader", "e"],
-      "commands": ["workbench.action.quickOpen"]
-    },
-    {
-      "before": ["leader", "c", "l"],
-      "commands": ["editor.action.commentLine"],
+      "before": [
+        "leader",
+        "c",
+        "l"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ],
       "silent": true
     },
     {
-      "before": [":"],
-      "commands": ["workbench.action.showCommands"],
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ],
       "silent": true
     }
   ],
   "vim.visualModeKeyBindings": [
     {
-      "before": ["leader", "c", "l"],
-      "commands": ["editor.action.commentLine"],
+      "before": [
+        "leader",
+        "c",
+        "l"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ],
       "silent": true
     }
   ],
@@ -194,7 +238,7 @@
   // Terminal Integrada
   "terminal.explorerKind": "integrated",
   "terminal.integrated.fontFamily": "Mononoki Nerd Font",
-  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.fontSize": 16,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
   "terminal.integrated.cursorStyle": "line",
@@ -230,17 +274,17 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "eq-material-theme-icons-light",
   "window.titleSeparator": " | ",
   "editor.cursorStyle": "line",
   "security.workspace.trust.untrustedFiles": "open",
   // "editor.rulers": [90],
   "editor.lineNumbers": "relative",
   "workbench.colorTheme": "Dracula",
-  "window.menuBarVisibility": "compact",
   "workbench.startupEditor": "none",
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
-  "editor.guides.highlightActiveBracketPair": true
+  "editor.guides.highlightActiveBracketPair": true,
+  "window.menuBarVisibility": "compact",
 }
