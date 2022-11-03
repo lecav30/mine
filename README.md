@@ -12,3 +12,11 @@ This repository is about other configurations that I need for several applicatio
 - Alacritty
 - Fish
 - Tmux
+
+### Notes GVim
+
+To edit GVim write the command
+`:echo $home`
+after that 
+`:edit _vimrc`
+That creates a _vimrc file which you will be able to modify
