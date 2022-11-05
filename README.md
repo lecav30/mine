@@ -15,8 +15,6 @@ This repository is about other configurations that I need for several applicatio
 
 ### Notes GVim
 
-To edit GVim write the command
-`:echo $home`
-after that 
+To edit GVim write the command in $home
 `:edit _vimrc`
 That creates a _vimrc file which you will be able to modify
