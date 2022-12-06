@@ -9,7 +9,8 @@
  
 # Oh my posh
 oh-my-posh init pwsh | Invoke-Expression
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\bubblesextra.omp.json" --print) -join "`n"))
+# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin_mocha.omp.json" --print) -join "`n"))
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha_lecav.omp.json" --print) -join "`n"))
 
 # PSReadLine
 # https://github.com/MicrosoftDocs/PowerShell-Docs/blob/main/reference/5.1/PSReadLine/Get-PSReadLineOption.md
@@ -27,8 +28,8 @@ Import-Module -Name Terminal-Icons
 Set-Alias winfetch pwshfetch-test-1 
 
 # Alias
-# Set-Alias -Name v -Value nvim
-# Set-Alias -Name vi -Value nvim
+Set-Alias -Name v -Value nvim
+Set-Alias -Name vi -Value nvim
 Set-Alias -Name ll -Value ls
 Set-Alias -Name touch -Value New-Item
 Set-Alias -Name pdw -Value pwd
@@ -44,6 +45,14 @@ function which ($command) {
         Select-Object -ExpandProperty Path -ErrorAction SilentlyContinue
     }
 
-function gvim ($command) {
-	  start "C:\Program Files\Vim\vim90\gvim.exe"
+function vimfiles ($command) {
+        Set-Location "C:\Users\lecav\AppData\Local\nvim"
     }
+
+function home ($command) {
+        Set-Location "$env"
+    }
+
+# function gvim ($command) {
+# 	  start "C:\Program Files\Vim\vim90\gvim.exe"
+#     }
