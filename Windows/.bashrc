@@ -1,8 +1,9 @@
-alias ..="cd .."
-
 alias la="ls -a"
 alias ll="ls -l --color=auto"
 
+alias cls="clear"
+
+alias ..="cd .."
 alias cd..="cd .."
 alias pdw="pwd"
 alias tree="tree.com"
@@ -21,11 +22,12 @@ alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gd="git diff"
 alias gp="git push"
-alias gpom="git pull origin main"
 
+alias jsonsvr="json-server --watch server/db.json --routes server/routes.json"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 
 # C:\Users\lecav\AppData\Local\Programs\oh-my-posh\themes
-eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/di4am0nd.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/star.omp.json)"
+eval "$(oh-my-posh init bash --config ~/OneDrive/catppuccin_mocha_lecav.omp.json)"
