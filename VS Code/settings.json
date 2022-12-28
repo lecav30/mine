@@ -1,5 +1,28 @@
 {
-  /* SETTINGS */
+  /* 
+    -------------------------------------- Fonts ---------------------------------------
+    UbuntuMono Nerd Font Mono
+    MesloLGLDZ Nerd Font Mono
+    CodeNewRoman Nerd Font Mono
+    Hack NF
+    Monoid Nerd Font
+    Lekton Nerd Font Mono
+    MonoLisa
+    Dank Mono
+    CodeNewRoman Nerd Font
+    agave Nerd Font
+    FiraCode Nerd Font Mono
+    CaskaydiaCove Nerd Font Mono
+    Mononoki Nerd Font
+    Monofur Nerd Font
+    Victor Mono
+    Cartograph CF Light
+    Hurmit NFM
+    Lilex Nerd Font Mono
+    Operator Mono
+    Inconsolata NF
+  */
+  /*********************************** SETTINGS *****************************************/
   "workbench.settings.editor": "json",
   "editor.insertSpaces": true,
   "editor.fontLigatures": true,
@@ -12,38 +35,13 @@
   "editor.fontSize": 20,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": false,
-  // UbuntuMono Nerd Font Mono
-  // MesloLGLDZ Nerd Font Mono
-  // CodeNewRoman Nerd Font Mono
-  // Hack NF
-  // Monoid Nerd Font
-  // Lekton Nerd Font Mono
-  // MonoLisa
-  // Dank Mono
-  // CodeNewRoman Nerd Font
-  // agave Nerd Font
-  // FiraCode Nerd Font Mono
-  // CaskaydiaCove Nerd Font Mono
-  // Mononoki Nerd Font
-  // Monofur Nerd Font
-  // Victor Mono
-  // Cartograph CF Light
-  // Hurmit Nerd Font Mono
-  // Lilex Nerd Font Mono
-  // Operator Mono
-  // Inconsolata NF
-  /* FORMATOS */
-  "[csv]": {
-    "editor.insertSpaces": false
-  },
-  /* LENGUAJES/FILES */
+  /************************************ LANGUAGES/FILES *********************************/
   // C++
   "C_Cpp.errorSquiggles": "enabled",
-  "C_Cpp.default.intelliSenseMode": "gcc-x64",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
   "[cpp]": {
+    "editor.tabSize": 4,
     "editor.wordBasedSuggestions": false,
     "editor.suggest.insertMode": "replace",
     "editor.semanticHighlighting.enabled": true,
@@ -59,6 +57,13 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
   // css
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -72,12 +77,12 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
+  // csv
+  "[csv]": {
+    "editor.insertSpaces": false
+  },
   // markdown
   "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // typescript
-  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // vue
@@ -86,14 +91,15 @@
   },
   // python
   "[python]": {
-    // "editor.defaultFormatter": "",
     "editor.formatOnPaste": false,
     "editor.formatOnSaveMode": "file",
     "files.insertFinalNewline": true
   },
+  // latex
   "[tex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
+  /************************************** EXTENSIONS ************************************/
   /* POLACODE */
   "polacode.backgroundColor": "#ffffff",
   /* LIVESERVER */
@@ -106,8 +112,8 @@
     "css",
     "json"
   ],
-  /* TABNINE */
-  "tabnine.experimentalAutoImports": true,
+  /* RAPID API */
+  "rapidapi.terminalLink.enabled": false,
   /* GITHUB COPILOT */
   "github.copilot.enable": {
     "*": true,
@@ -115,12 +121,77 @@
     "plaintext": false,
     "markdown": false
   },
+  /**************************************** TERMINAL ************************************/
+  // Terminal Integrada
+  "terminal.explorerKind": "integrated",
+  "terminal.integrated.fontFamily": "Lilex NFM",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.profiles.windows": {
+    // "Pwsh7": {
+    //   "source": "PowerShell7",
+    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    // },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  // Terminal Externa
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  /***************************************** EXTRAS *************************************/
+  "window.titleSeparator": " | ",
+  "window.menuBarVisibility": "toggle",
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "expand",
+  "editor.rulers": [
+    90
+  ],
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.preview": true,
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  /*************************************************************************************/
+  /**********************************NOT USED YET***************************************/
+  /*************************************************************************************/
+  /* TABNINE */
+  "tabnine.experimentalAutoImports": true,
   /* VIM */
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   // "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
   "vim.normalModeKeyBindings": [
     {
       "before": [
@@ -196,118 +267,4 @@
     "<C-f>": false,
     "<C-j>": false
   },
-  /* Custom themes */
-  "workbench.colorCustomizations": {
-    "[Material Theme Darker]": {
-      "editorCursor.foreground": "#ffffff"
-    }
-  },
-  "editor.tokenColorCustomizations": {
-    "[Dracula]": {
-      "comments": {
-        "fontStyle": "italic"
-      }
-    },
-    "[Material Theme Darker]": {
-      "comments": {
-        // victor mono:
-        // "fontStyle": "italic bold"
-      },
-      "textMateRules": [
-        {
-          "scope": [
-            "constant.numeric.decimal.cpp",
-            "constant.numeric",
-            "meta.block.cpp",
-            "meta.parens.cpp",
-            "meta.body.function.definition.cpp",
-            "meta.function.definition.cpp",
-            "source.cpp"
-          ],
-          "settings": {
-            "foreground": "#ffffff"
-          }
-        }
-      ]
-    }
-  },
-  "editor.semanticTokenColorCustomizations": {
-    "[Material Theme Darker]": {
-      "rules": {
-        "parameter": "#A3E4D7",
-        "variable": "#A3E4D7"
-      }
-    }
-  },
-  /* TERMINAL */
-  // Terminal Integrada
-  "terminal.explorerKind": "integrated",
-  "terminal.integrated.fontFamily": "Lilex Nerd Font Mono",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.defaultLocation": "view",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.profiles.windows": {
-    // "Pwsh7": {
-    //   "source": "PowerShell7",
-    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
-    // },
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell",
-      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-    }
-  },
-  // Terminal Externa
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "window.titleSeparator": " | ",
-  "editor.cursorStyle": "line",
-  "editor.cursorBlinking": "expand",
-  "security.workspace.trust.untrustedFiles": "open",
-  // "editor.rulers": [90],
-  "editor.lineNumbers": "relative",
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.startupEditor": "none",
-  "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "editor.guides.highlightActiveBracketPair": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.inlineSuggest.enabled": true,
-  "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.enabled": false,
-  "rapidapi.terminalLink.enabled": false,
-  "sqltools.connections": [
-    {
-      "previewLimit": 50,
-      "server": "localhost",
-      "port": 5432,
-      "driver": "PostgreSQL",
-      "name": "TestPostgreSQL",
-      "database": "test",
-      "username": "postgres",
-      "password": "database2002"
-    }
-  ],
 }
