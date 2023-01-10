@@ -23,6 +23,13 @@
             "command": "paste"
         },
         {
+            "command": {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+l"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+v"
         },
@@ -47,11 +54,34 @@
             "keys": "alt+down"
         },
         {
+            "command": "unbound",
+            "keys": "alt+shift+down"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+up"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+right"
+        },
+        {
+            "command": "unbound",
+            "keys": "alt+shift+left"
+        },
+        {
             "command": {
                 "action": "splitPane",
                 "split": "down"
             },
-            "keys": "alt+shift+h"
+            "keys": "alt+shift+o"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+shift+k"
         },
         {
             "command": {
@@ -77,6 +107,13 @@
         },
         {
             "command": {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+j"
+        },
+        {
+            "command": {
                 "action": "moveFocus",
                 "direction": "down"
             },
@@ -88,14 +125,21 @@
                 "direction": "left"
             },
             "keys": "alt+h"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+h"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
-    "initialCols": 90,
-    "initialRows": 23,
-    "initialPosition": "300,100",
+    "initialCols": 100,
+    "initialPosition": "240,50",
+    "initialRows": 30,
     "language": "es-ES",
     "launchMode": "default",
     "profiles": {
