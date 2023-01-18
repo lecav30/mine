@@ -10,7 +10,8 @@
 # Oh my posh
 oh-my-posh init pwsh | Invoke-Expression
 # & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin_mocha.omp.json" --print) -join "`n"))
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha_lecav.omp.json" --print) -join "`n"))
+# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\catppuccin_mocha_lecav.omp.json" --print) -join "`n"))
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\takuya_modify.omp.json" --print) -join "`n"))
 
 # PSReadLine
 # https://github.com/MicrosoftDocs/PowerShell-Docs/blob/main/reference/5.1/PSReadLine/Get-PSReadLineOption.md
@@ -53,6 +54,7 @@ function home ($command) {
         Set-Location "$env"
     }
 
-# function gvim ($command) {
-# 	  start "C:\Program Files\Vim\vim90\gvim.exe"
-#     }
+function jsonsvr ($command) {
+        json-server --watch server/db.json --routes server/routes.json
+    }
+
