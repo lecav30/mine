@@ -30,4 +30,5 @@ source <(ng completion script)
 
 # C:\Users\lecav\AppData\Local\Programs\oh-my-posh\themes
 # eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/star.omp.json)"
-eval "$(oh-my-posh init bash --config ~/OneDrive/catppuccin_mocha_lecav.omp.json)"
+# eval "$(oh-my-posh init bash --config ~/OneDrive/catppuccin_mocha_lecav.omp.json)"
+eval "$(oh-my-posh init bash --config ~/OneDrive/takuya_modify.omp.json)"
