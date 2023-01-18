@@ -1,19 +1,22 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": [
+    "actions": 
+    [
         {
             "command": "find",
             "keys": "ctrl+shift+f"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             }
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "right"
             },
@@ -23,7 +26,8 @@
             "command": "paste"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "resizePane",
                 "direction": "right"
             },
@@ -70,21 +74,24 @@
             "keys": "alt+shift+left"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "down"
             },
             "keys": "alt+shift+o"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "resizePane",
                 "direction": "up"
             },
             "keys": "alt+shift+k"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -92,42 +99,48 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "up"
             },
             "keys": "alt+k"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "right"
             },
             "keys": "alt+l"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "resizePane",
                 "direction": "down"
             },
             "keys": "alt+shift+j"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "keys": "alt+j"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "moveFocus",
                 "direction": "left"
             },
             "keys": "alt+h"
         },
         {
-            "command": {
+            "command": 
+            {
                 "action": "resizePane",
                 "direction": "left"
             },
@@ -142,24 +155,29 @@
     "initialRows": 30,
     "language": "es-ES",
     "launchMode": "default",
-    "profiles": {
-        "defaults": {
+    "profiles": 
+    {
+        "defaults": 
+        {
             "backgroundImage": null,
-            "colorScheme": "Catppuccin Mocha",
+            "colorScheme": "Solarized Dark Higher Contrast",
             "cursorColor": "#FFFFFF",
             "cursorShape": "bar",
             "experimental.retroTerminalEffect": false,
-            "font": {
-                "face": "FiraCode NF",
+            "font": 
+            {
+                "face": "CaskaydiaCove Nerd Font Mono",
                 "size": 14
             },
+            "opacity": 30,
             "padding": "15",
             "startingDirectory": "%USERPROFILE%",
             "suppressApplicationTitle": true,
             "tabTitle": "Shell",
             "useAcrylic": true
         },
-        "list": [
+        "list": 
+        [
             {
                 "commandline": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
                 "guid": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
@@ -191,7 +209,8 @@
             }
         ]
     },
-    "schemes": [
+    "schemes": 
+    [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -513,6 +532,29 @@
             "selectionBackground": "#FFFFFF",
             "white": "#EEE8D5",
             "yellow": "#B58900"
+        },
+        {
+            "background": "#001E27",
+            "black": "#002831",
+            "blue": "#2176C7",
+            "brightBlack": "#006488",
+            "brightBlue": "#178EC8",
+            "brightCyan": "#00B39E",
+            "brightGreen": "#51EF84",
+            "brightPurple": "#E24D8E",
+            "brightRed": "#F5163B",
+            "brightWhite": "#FCF4DC",
+            "brightYellow": "#B27E28",
+            "cursorColor": "#F34B00",
+            "cyan": "#259286",
+            "foreground": "#9CC2C3",
+            "green": "#6CBE6C",
+            "name": "Solarized Dark Higher Contrast",
+            "purple": "#C61C6F",
+            "red": "#D11C24",
+            "selectionBackground": "#003748",
+            "white": "#EAE3CB",
+            "yellow": "#A57706"
         },
         {
             "background": "#FDF6E3",
