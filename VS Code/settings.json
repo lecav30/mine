@@ -11,7 +11,7 @@
     Dank Mono
     CodeNewRoman Nerd Font
     agave Nerd Font
-    FiraCode Nerd Font Mono
+    FiraCode NF
     CaskaydiaCove Nerd Font Mono
     Mononoki Nerd Font
     Monofur Nerd Font
@@ -23,7 +23,6 @@
     Inconsolata NF
   */
   /*********************************** SETTINGS *****************************************/
-  "workbench.settings.editor": "json",
   "editor.insertSpaces": true,
   "editor.fontLigatures": true,
   "editor.tabSize": 4,
@@ -31,167 +30,110 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": false,
   "editor.formatOnSave": true,
-  "editor.fontFamily": "Operator Mono",
-  "editor.fontSize": 20,
-  "files.autoSave": "afterDelay",
-  "files.insertFinalNewline": false,
-  /************************************ LANGUAGES/FILES *********************************/
-  // C++
-  "C_Cpp.errorSquiggles": "enabled",
-  "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
-  "[cpp]": {
-    "editor.tabSize": 4,
-    "editor.wordBasedSuggestions": false,
-    "editor.suggest.insertMode": "replace",
-    "editor.semanticHighlighting.enabled": true,
-    "editor.defaultFormatter": "ms-vscode.cpptools",
-    "files.insertFinalNewline": true
-  },
-  // html
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  // javascript
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  // typescript
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  },
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  // css
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.suggest.insertMode": "replace",
-    "editor.tabSize": 2
-  },
-  // json
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  // csv
-  "[csv]": {
-    "editor.insertSpaces": false
-  },
-  // markdown
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // vue
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  // python
-  "[python]": {
-    "editor.formatOnPaste": false,
-    "editor.formatOnSaveMode": "file",
-    "files.insertFinalNewline": true
-  },
-  // latex
-  "[tex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
-  },
-  /************************************** EXTENSIONS ************************************/
-  /* POLACODE */
-  "polacode.backgroundColor": "#ffffff",
-  /* LIVESERVER */
-  "liveServer.settings.donotShowInfoMsg": true,
-  /* LIVESHARE */
-  "liveshare.connectionMode": "relay",
-  /* COLORIZE */
-  "colorize.languages": [
-    "javascript",
-    "css",
-    "json"
-  ],
-  /* RAPID API */
-  "rapidapi.terminalLink.enabled": false,
-  /* GITHUB COPILOT */
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": false,
-    "markdown": false
-  },
-  /**************************************** TERMINAL ************************************/
-  // Terminal Integrada
-  "terminal.explorerKind": "integrated",
-  "terminal.integrated.fontFamily": "Lilex NFM",
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.defaultLocation": "view",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "terminal.integrated.enableMultiLinePasteWarning": false,
-  "terminal.integrated.profiles.windows": {
-    // "Pwsh7": {
-    //   "source": "PowerShell7",
-    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
-    // },
-    "PowerShell": {
-      "source": "PowerShell",
-      "icon": "terminal-powershell",
-      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
-    },
-    "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
-      "args": [],
-      "icon": "terminal-cmd"
-    },
-    "Git Bash": {
-      "source": "Git Bash",
-      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
-    }
-  },
-  // Terminal Externa
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  /***************************************** EXTRAS *************************************/
-  "window.titleSeparator": " | ",
-  "window.menuBarVisibility": "toggle",
-  "editor.cursorStyle": "line",
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
-  "editor.rulers": [
-    90
-  ],
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Dank Mono",
+  "editor.fontSize": 20,
+  "editor.suggest.insertMode": "replace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.semanticHighlighting.enabled": true,
   "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.highlightActiveBracketPair": true,
   "editor.inlineSuggest.enabled": true,
   "editor.suggest.preview": true,
+  "editor.rulers": [
+    90
+  ],
+  "breadcrumbs.enabled": false,
+  "files.autoSave": "afterDelay",
+  "files.insertFinalNewline": true,
+  "window.menuBarVisibility": "compact",
+  "window.titleSeparator": " | ",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.settings.editor": "json",
   "security.workspace.trust.untrustedFiles": "open",
-  /*************************************************************************************/
-  /**********************************NOT USED YET***************************************/
-  /*************************************************************************************/
-  /* TABNINE */
-  "tabnine.experimentalAutoImports": true,
+  /************************************ LANGUAGES/FILES *********************************/
+  // C++
+  "[cpp]": {
+    "editor.wordBasedSuggestions": false,
+  },
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
+  // html
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  // javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // typescript
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // css
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  // php
+  "[php]": {
+    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    "editor.tabSize": 2
+  },
+  // lua
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
+  // json
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  // csv
+  "[csv]": {
+    "editor.insertSpaces": false
+  },
+  // vue
+  "[vue]": {
+    "editor.tabSize": 2
+  },
+  // python
+  "[python]": {
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+  },
+  // latex
+  "[tex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "ltex.language": "es",
+  // sql
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  /************************************** EXTENSIONS ************************************/
   /* VIM */
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
-  // "vim.useCtrlKeys": true,
   "vim.normalModeKeyBindings": [
     {
       "before": [
@@ -237,6 +179,17 @@
     },
     {
       "before": [
+        "leader",
+        "f",
+        "n"
+      ],
+      "commands": [
+        "editor.action.formatDocument"
+      ],
+      "silent": true
+    },
+    {
+      "before": [
         ":"
       ],
       "commands": [
@@ -260,11 +213,68 @@
   ],
   "vim.leader": "<space>",
   "vim.handleKeys": {
-    "<C-a>": false,
     "<C-b>": false,
     "<C-h>": false,
     "<C-k>": false,
     "<C-f>": false,
     "<C-j>": false
   },
+  /* LIVESERVER */
+  "liveServer.settings.donotShowInfoMsg": true,
+  /* LIVESHARE */
+  "liveshare.connectionMode": "relay",
+  /* COLORIZE */
+  "colorize.languages": [
+    "javascript",
+    "css",
+    "json"
+  ],
+  /* GITHUB COPILOT */
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false
+  },
+  /* TABNINE */
+  "tabnine.experimentalAutoImports": true,
+  /**************************************** TERMINAL ************************************/
+  // Terminal Integrada
+  "terminal.integrated.fontFamily": "Lilex NFM",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.profiles.windows": {
+    // "Pwsh7": {
+    //   "source": "PowerShell7",
+    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    // },
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash",
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe"
+    }
+  },
+  // Terminal Externa
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "git.confirmSync": false,
 }
