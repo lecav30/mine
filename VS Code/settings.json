@@ -53,24 +53,23 @@
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
-  "window.menuBarVisibility": "compact",
   "window.titleSeparator": " | ",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.startupEditor": "none",
-  "workbench.statusBar.visible": false,
-  "workbench.layoutControl.enabled": false,
   "workbench.settings.editor": "json",
   "security.workspace.trust.untrustedFiles": "open",
   /************************************ LANGUAGES/FILES *********************************/
   // C++
   "[cpp]": {
     "editor.wordBasedSuggestions": false,
+    "editor.defaultFormatter": "xaver.clang-format"
   },
-  "C_Cpp.errorSquiggles": "enabled",
-  "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 4, IncludeBlocks: Merge, IndentGotoLabels: true, KeepEmptyLinesAtTheStartOfBlocks: true}",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
+  "clang-format.executable": "c:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "clang-format.style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
   // html
   "[html]": {
     "editor.tabSize": 2
@@ -90,10 +89,6 @@
   "[php]": {
     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
     "editor.tabSize": 2
-  },
-  // lua
-  "[lua]": {
-    "editor.defaultFormatter": "sumneko.lua"
   },
   // json
   "[json]": {
@@ -125,13 +120,8 @@
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "ltex.language": "es",
-  // sql
-  "[sql]": {
-    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
-  },
   /************************************** EXTENSIONS ************************************/
   /* VIM */
-  "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.normalModeKeyBindings": [
@@ -277,4 +267,7 @@
     "**/.factorypath": true
   },
   "git.confirmSync": false,
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.enabled": false,
+  "window.commandCenter": true,
 }
