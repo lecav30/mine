@@ -1,27 +1,4 @@
 {
-  /* 
-    -------------------------------------- Fonts ---------------------------------------
-    UbuntuMono Nerd Font Mono
-    MesloLGLDZ Nerd Font Mono
-    CodeNewRoman Nerd Font Mono
-    Hack NF
-    Monoid Nerd Font
-    Lekton Nerd Font Mono
-    MonoLisa
-    Dank Mono
-    CodeNewRoman Nerd Font
-    agave Nerd Font
-    FiraCode NF
-    CaskaydiaCove Nerd Font Mono
-    Mononoki Nerd Font
-    Monofur Nerd Font
-    Victor Mono
-    Cartograph CF Light
-    Hurmit NFM
-    Lilex Nerd Font Mono
-    Operator Mono
-    Inconsolata NF
-  */
   /*********************************** SETTINGS *****************************************/
   "editor.insertSpaces": true,
   "editor.fontLigatures": true,
@@ -34,8 +11,8 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Dank Mono",
-  "editor.fontSize": 20,
+  "editor.fontFamily": "Cartograph CF Light",
+  "editor.fontSize": 18,
   "editor.suggest.insertMode": "replace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.semanticHighlighting.enabled": true,
@@ -53,12 +30,16 @@
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
-  "window.titleSeparator": " | ",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
+  "workbench.layoutControl.enabled": false,
+  "window.titleSeparator": " | ",
+  "window.menuBarVisibility": "compact",
+  "window.commandCenter": true,
+  "window.zoomLevel": 1,
   "security.workspace.trust.untrustedFiles": "open",
   /************************************ LANGUAGES/FILES *********************************/
   // C++
@@ -66,8 +47,6 @@
     "editor.wordBasedSuggestions": false,
     "editor.defaultFormatter": "xaver.clang-format"
   },
-  "C_Cpp.default.intelliSenseMode": "gcc-x64",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   "clang-format.executable": "c:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "clang-format.style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
   // html
@@ -267,7 +246,4 @@
     "**/.factorypath": true
   },
   "git.confirmSync": false,
-  "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.enabled": false,
-  "window.commandCenter": true,
 }
