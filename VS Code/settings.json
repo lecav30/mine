@@ -47,8 +47,10 @@
     "editor.wordBasedSuggestions": false,
     "editor.defaultFormatter": "xaver.clang-format"
   },
-  "clang-format.executable": "c:\\Program Files\\LLVM\\bin\\clang-format.exe",
+  "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
   "clang-format.style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   // html
   "[html]": {
     "editor.tabSize": 2
