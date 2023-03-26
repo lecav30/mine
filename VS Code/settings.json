@@ -152,7 +152,6 @@
       "before": [
         "leader",
         "f",
-        "n"
       ],
       "commands": [
         "editor.action.formatDocument"
@@ -211,7 +210,7 @@
   "tabnine.experimentalAutoImports": true,
   /**************************************** TERMINAL ************************************/
   // Terminal Integrada
-  "terminal.integrated.fontFamily": "Lilex NFM",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
