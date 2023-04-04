@@ -11,7 +11,7 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Cartograph CF Light",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
   "editor.fontSize": 18,
   "editor.suggest.insertMode": "replace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -30,9 +30,9 @@
   "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
   "files.insertFinalNewline": true,
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "icons",
+  "workbench.colorTheme": "Solarized Dark+",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.layoutControl.enabled": false,
@@ -92,6 +92,7 @@
   "[python]": {
     "editor.formatOnPaste": false,
     "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "ms-python.python",
   },
   // latex
   "[tex]": {
@@ -247,4 +248,5 @@
     "**/.factorypath": true
   },
   "git.confirmSync": false,
+  "window.titleBarStyle": "custom",
 }
