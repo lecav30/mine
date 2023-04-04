@@ -4,15 +4,12 @@
     "actions": 
     [
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
-            }
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+j"
         },
         {
             "command": 
@@ -23,15 +20,34 @@
             "keys": "alt+shift+v"
         },
         {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            }
+        },
+        {
             "command": "paste"
         },
         {
             "command": 
             {
                 "action": "resizePane",
-                "direction": "right"
+                "direction": "up"
             },
-            "keys": "alt+shift+l"
+            "keys": "alt+shift+k"
+        },
+        {
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+h"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": "unbound",
@@ -77,26 +93,26 @@
             "command": 
             {
                 "action": "splitPane",
-                "split": "down"
+                "split": "auto",
+                "splitMode": "duplicate"
             },
-            "keys": "alt+shift+o"
+            "keys": "alt+shift+d"
         },
         {
             "command": 
             {
                 "action": "resizePane",
-                "direction": "up"
+                "direction": "right"
             },
-            "keys": "alt+shift+k"
+            "keys": "alt+shift+l"
         },
         {
             "command": 
             {
                 "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
+                "split": "down"
             },
-            "keys": "alt+shift+d"
+            "keys": "alt+shift+o"
         },
         {
             "command": 
@@ -117,34 +133,22 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+j"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+j"
-        },
-        {
-            "command": 
-            {
                 "action": "moveFocus",
                 "direction": "left"
             },
             "keys": "alt+h"
         },
         {
+            "command": "openTabRenamer",
+            "keys": "ctrl+shift+m"
+        },
+        {
             "command": 
             {
                 "action": "resizePane",
-                "direction": "left"
+                "direction": "down"
             },
-            "keys": "alt+shift+h"
+            "keys": "alt+shift+j"
         }
     ],
     "copyFormatting": "none",
@@ -160,16 +164,17 @@
         "defaults": 
         {
             "backgroundImage": null,
-            "colorScheme": "Solarized Dark Higher Contrast",
+            "colorScheme": "Catppuccin Mocha",
             "cursorColor": "#FFFFFF",
             "cursorShape": "bar",
             "experimental.retroTerminalEffect": false,
             "font": 
             {
                 "face": "CaskaydiaCove Nerd Font Mono",
-                "size": 14
+                "size": 14.0,
+                "weight": "normal"
             },
-            "opacity": 30,
+            "opacity": 90,
             "padding": "15",
             "startingDirectory": "%USERPROFILE%",
             "suppressApplicationTitle": true,
@@ -767,6 +772,7 @@
     "startOnUserLogin": true,
     "tabWidthMode": "titleLength",
     "theme": "dark",
+    "themes": [],
     "useAcrylicInTabRow": true,
     "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502"
 }
