@@ -1,3 +1,6 @@
+# Se recarga .bashrc con:
+# source ~/.bashrc
+
 alias la="ls -a"
 alias ll="ls -l --color=auto"
 
@@ -9,6 +12,8 @@ alias pdw="pwd"
 alias tree="tree.com"
 
 alias tcpp="./a.exe < in.txt > out.txt"
+alias ucpp="./a.exe < in.txt"
+alias rcpp="g++ main.cpp; tcpp; cat out.txt"
 
 alias vi="nvim"
 
@@ -29,6 +34,4 @@ alias jsonsvr="json-server --watch server/db.json --routes server/routes.json"
 source <(ng completion script)
 
 # C:\Users\lecav\AppData\Local\Programs\oh-my-posh\themes
-# eval "$(oh-my-posh init bash --config ~/AppData/Local/Programs/oh-my-posh/themes/star.omp.json)"
-# eval "$(oh-my-posh init bash --config ~/OneDrive/catppuccin_mocha_lecav.omp.json)"
-eval "$(oh-my-posh init bash --config ~/OneDrive/takuya_modify.omp.json)"
+eval "$(oh-my-posh init bash --config ~/OneDrive/catppuccin_mocha_lecav.omp.json)"
