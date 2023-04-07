@@ -11,7 +11,8 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
+  // "editor.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
+  "editor.fontFamily": "Victor Mono",
   "editor.fontSize": 18,
   "editor.suggest.insertMode": "replace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -32,7 +33,6 @@
   "files.insertFinalNewline": true,
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "icons",
-  "workbench.colorTheme": "Solarized Dark+",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
   "workbench.layoutControl.enabled": false,
@@ -48,7 +48,8 @@
     "editor.defaultFormatter": "xaver.clang-format"
   },
   "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
-  "clang-format.style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+  // https://clang.llvm.org/docs/ClangFormatStyleOptions.html#basedonstyle
+  "clang-format.style": "{BasedOnStyle: Chromium, IndentWidth: 4, ColumnLimit: 0}",
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   // html
@@ -102,6 +103,27 @@
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
   "ltex.language": "es",
+  "latex-workshop.view.pdf.viewer": "external",
+  "latex-workshop.view.pdf.external.viewer.command": "C:/Users/lecav/AppData/Local/SumatraPDF/SumatraPDF.exe",
+  "latex-workshop.view.pdf.external.viewer.args": [
+    "-forward-search",
+    "%TEX%",
+    "%LINE%",
+    "-reuse-instance",
+    "-inverse-search",
+    "\"C:\\Users\\<Username>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\<U>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
+    "%PDF%"
+  ],
+  "latex-workshop.view.pdf.external.synctex.command": "C:/Users/lecav/AppData/Local/SumatraPDF/SumatraPDF.exe",
+  "latex-workshop.view.pdf.external.synctex.args": [
+    "-forward-search",
+    "%TEX%",
+    "%LINE%",
+    "-reuse-instance",
+    "-inverse-search",
+    "\"C:\\Users\\<Username>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\<U>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
+    "%PDF%"
+  ],
   /************************************** EXTENSIONS ************************************/
   /* VIM */
   "vim.incsearch": true,
@@ -249,4 +271,6 @@
   },
   "git.confirmSync": false,
   "window.titleBarStyle": "custom",
+  "git.autofetch": true,
+  "workbench.colorTheme": "Catppuccin Mocha",
 }
