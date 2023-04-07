@@ -26,6 +26,17 @@ syntax on
 filetype indent on
 filetype on
 
+" Save and Exit
 nmap <leader>ww :w<CR>
 nmap <leader>wq :wq<CR>
 nmap <leader>qq :q!<CR>
+
+" Select All
+nmap <C-a> gg<S-v>G
+
+" Terminal
+tmap <Esc> <C-\\><C-n>
+
+" Move
+xmap K :move '<-2<CR>gv-gv
+xmap J :move '>+1<CR>gv-gv
