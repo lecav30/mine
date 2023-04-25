@@ -11,35 +11,34 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  // "editor.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
   "editor.fontFamily": "Victor Mono",
   "editor.fontSize": 18,
   "editor.suggest.insertMode": "replace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.semanticHighlighting.enabled": true,
   "editor.wordWrap": "on",
-  "editor.lineNumbers": "relative",
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.hideCursorInOverviewRuler": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.highlightActiveBracketPair": true,
   "editor.inlineSuggest.enabled": true,
   "editor.suggest.preview": true,
-  "editor.rulers": [
-    90
-  ],
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "files.autoSave": "afterDelay",
-  "files.insertFinalNewline": true,
   "workbench.productIconTheme": "icons-carbon",
   "workbench.iconTheme": "icons",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
-  "workbench.layoutControl.enabled": false,
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": false,
+  "workbench.editor.showTabs": false,
+  "window.titleBarStyle": "custom",
   "window.titleSeparator": " | ",
   "window.menuBarVisibility": "compact",
-  "window.commandCenter": true,
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0.8,
   "security.workspace.trust.untrustedFiles": "open",
   /************************************ LANGUAGES/FILES *********************************/
   // C++
@@ -81,10 +80,6 @@
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.tabSize": 2
   },
-  // csv
-  "[csv]": {
-    "editor.insertSpaces": false
-  },
   // vue
   "[vue]": {
     "editor.tabSize": 2
@@ -102,7 +97,6 @@
   "[latex]": {
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
-  "ltex.language": "es",
   "latex-workshop.view.pdf.viewer": "external",
   "latex-workshop.view.pdf.external.viewer.command": "C:/Users/lecav/AppData/Local/SumatraPDF/SumatraPDF.exe",
   "latex-workshop.view.pdf.external.viewer.args": [
@@ -125,93 +119,6 @@
     "%PDF%"
   ],
   /************************************** EXTENSIONS ************************************/
-  /* VIM */
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "leader",
-        "w",
-        "w"
-      ],
-      "commands": [
-        "workbench.action.files.save"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "q",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "w",
-        "q"
-      ],
-      "commands": [
-        "workbench.action.files.save",
-        "workbench.action.closeActiveEditor"
-      ]
-    },
-    {
-      "before": [
-        "leader",
-        "c",
-        "l"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ],
-      "silent": true
-    },
-    {
-      "before": [
-        "leader",
-        "f",
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ],
-      "silent": true
-    },
-    {
-      "before": [
-        ":"
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ],
-      "silent": true
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        "leader",
-        "c",
-        "l"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ],
-      "silent": true
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-b>": false,
-    "<C-h>": false,
-    "<C-k>": false,
-    "<C-f>": false,
-    "<C-j>": false
-  },
   /* LIVESERVER */
   "liveServer.settings.donotShowInfoMsg": true,
   /* LIVESHARE */
@@ -270,7 +177,6 @@
     "**/.factorypath": true
   },
   "git.confirmSync": false,
-  "window.titleBarStyle": "custom",
   "git.autofetch": true,
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Catppuccin Macchiato",
 }
