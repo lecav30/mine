@@ -1,97 +1,44 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "down"
             },
             "keys": "alt+j"
         },
         {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "alt+shift+v"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            }
-        },
-        {
-            "command": "paste"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "resizePane",
-                "direction": "up"
+                "direction": "right"
             },
-            "keys": "alt+shift+k"
+            "keys": "alt+shift+l"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "resizePane",
                 "direction": "left"
             },
             "keys": "alt+shift+h"
         },
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
+            "command": {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+shift+k"
         },
         {
-            "command": "unbound",
-            "keys": "ctrl+v"
+            "command": {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+j"
         },
         {
-            "command": "unbound",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+left"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+left"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -99,40 +46,35 @@
             "keys": "alt+shift+d"
         },
         {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "right"
+            "command": {
+                "action": "splitPane",
+                "split": "right"
             },
-            "keys": "alt+shift+l"
+            "keys": "alt+shift+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "down"
             },
             "keys": "alt+shift+o"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "up"
             },
             "keys": "alt+k"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "right"
             },
             "keys": "alt+l"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveFocus",
                 "direction": "left"
             },
@@ -143,46 +85,55 @@
             "keys": "ctrl+shift+m"
         },
         {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+j"
+            "command": "find",
+            "keys": "ctrl+f"
+        },
+        {
+            "command": "newTab",
+            "keys": "ctrl+t"
+        },
+        {
+            "command": "closeTab",
+            "keys": "ctrl+q"
+        },
+        {
+            "command": "closeOtherTabs",
+            "keys": "ctrl+shift+q"
+        },
+        {
+            "command": "closePane",
+            "keys": "alt+q"
+        },
+        {
+            "command": "closeOtherPanes",
+            "keys": "alt+shift+q"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
     "initialCols": 100,
-    "initialPosition": "240,50",
     "initialRows": 30,
+    "initialPosition": "240,50",
     "language": "es-ES",
     "launchMode": "default",
-    "profiles": 
-    {
-        "defaults": 
-        {
-            "backgroundImage": null,
+    "profiles": {
+        "defaults": {
+            "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Imágenes\\Background\\catppuccin.png",
+            "backgroundImageOpacity": 0.2,
             "colorScheme": "Catppuccin Mocha",
-            "cursorColor": "#FFFFFF",
-            "cursorShape": "bar",
-            "experimental.retroTerminalEffect": false,
-            "font": 
-            {
-                "face": "CaskaydiaCove Nerd Font Mono",
+            "font": {
+                "face": "CaskaydiaCove Nerd Font",
                 "size": 14.0,
                 "weight": "normal"
             },
-            "opacity": 90,
             "padding": "15",
             "startingDirectory": "%USERPROFILE%",
             "suppressApplicationTitle": true,
             "tabTitle": "Shell",
             "useAcrylic": true
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe",
                 "guid": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
@@ -211,11 +162,22 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{85e3df73-9abe-5c6d-9236-b6adfd0fedea}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{b1f8b327-c3d4-5cff-9a33-edc149778fe5}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -772,7 +734,6 @@
     "startOnUserLogin": true,
     "tabWidthMode": "titleLength",
     "theme": "dark",
-    "themes": [],
     "useAcrylicInTabRow": true,
     "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502"
 }
