@@ -119,9 +119,10 @@
     "launchMode": "default",
     "profiles": {
         "defaults": {
-            "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Imágenes\\Background\\catppuccin.png",
+            "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Imágenes\\Background\\miyamoto_musashi.jpg",
             "backgroundImageOpacity": 0.2,
-            "colorScheme": "Catppuccin Mocha",
+            // "background": "#0C0C0C",
+            "colorScheme": "Solarized Light",
             "font": {
                 "face": "CaskaydiaCove Nerd Font",
                 "size": 14.0,
@@ -524,7 +525,7 @@
             "yellow": "#A57706"
         },
         {
-            "background": "#FDF6E3",
+            "background": "#DED1A5",
             "black": "#002B36",
             "blue": "#268BD2",
             "brightBlack": "#073642",
