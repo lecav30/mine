@@ -38,14 +38,21 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 
 
-colorscheme darkblue
+colorscheme sorbet
 syntax on
 
 filetype indent on
 filetype on
 
+" Save and Exit
 nmap <leader>ww :w<CR>
 nmap <leader>wq :wq<CR>
 nmap <leader>qq :q!<CR>
 
-autocmd filetype cpp nnoremap <f5> :w <bar> !g++ % -o %:r <cr> :!%:r <cr>
+" Select All
+nmap <C-a> gg<S-v>G
+
+" Terminal
+tmap <Esc> <C-\\><C-n>
+
+autocmd filetype cpp nnoremap <f6> :w <bar> !g++ % -o %:r <cr> :!%:r <cr>
