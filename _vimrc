@@ -1,11 +1,13 @@
 " Config vim
 let g:netrw_liststyle=3
 let mapleader = " "
+let $HOME=$VIM
 
 set backspace=indent,eol,start
 set number
 set relativenumber
-set guifont=Hurmit\ Nerd\ Font\ Mono:h16
+set guifont=Consolas:h16
+" set guifont=Hurmit\ Nerd\ Font\ Mono:h16
 set autoindent
 set expandtab
 set shiftwidth=4
@@ -38,7 +40,7 @@ set statusline+=\ ascii:\ %b\ hex:\ 0x%B\ row:\ %l\ col:\ %c\ percent:\ %p%%
 set laststatus=2
 
 
-colorscheme sorbet
+colorscheme slate
 syntax on
 
 filetype indent on
@@ -52,6 +54,13 @@ nmap <leader>qq :q!<CR>
 " Select All
 nmap <C-a> gg<S-v>G
 
+" Explore
+nmap <leader>ee :Lexplore %:p:h<CR>
+
+function! NetrwMapping()
+  nmap <buffer> <Leader>ee :Lexplore<CR>
+endfunction
+
 " Terminal
 tmap <Esc> <C-\\><C-n>
 
@@ -63,4 +72,5 @@ inoremap " ""<Esc>ha
 inoremap ' ''<Esc>ha
 inoremap ` ``<Esc>ha
 
-autocmd filetype cpp nnoremap <f6> :w <bar> !g++ % -o %:r <cr> :!%:r <cr>
+autocmd BufEnter * silent! :lcd%:p:h
+autocmd filetype cpp nnoremap <f5> :w <bar> !g++ % -o %:r <cr> :!%:r <cr>
