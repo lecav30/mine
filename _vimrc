@@ -55,4 +55,12 @@ nmap <C-a> gg<S-v>G
 " Terminal
 tmap <Esc> <C-\\><C-n>
 
+" Autocomplete
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+
 autocmd filetype cpp nnoremap <f6> :w <bar> !g++ % -o %:r <cr> :!%:r <cr>
