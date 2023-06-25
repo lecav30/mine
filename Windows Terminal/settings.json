@@ -81,10 +81,6 @@
             "keys": "alt+h"
         },
         {
-            "command": "openTabRenamer",
-            "keys": "ctrl+shift+m"
-        },
-        {
             "command": "find",
             "keys": "ctrl+f"
         },
@@ -113,16 +109,15 @@
     "copyOnSelect": false,
     "defaultProfile": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
     "initialCols": 100,
-    "initialRows": 30,
-    "initialPosition": "240,50",
-    "language": "es-ES",
-    "launchMode": "default",
+    "initialRows": 25,
+    "initialPosition": "245,80",
+    "launchMode": "focus", // without decorations
     "profiles": {
         "defaults": {
             "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Imágenes\\Background\\miyamoto_musashi.jpg",
             "backgroundImageOpacity": 0.2,
             // "background": "#0C0C0C",
-            "colorScheme": "Solarized Light",
+            "colorScheme": "Solarized Dark",
             "font": {
                 "face": "CaskaydiaCove Nerd Font",
                 "size": 14.0,
@@ -130,7 +125,6 @@
             },
             "padding": "15",
             "startingDirectory": "%USERPROFILE%",
-            "suppressApplicationTitle": true,
             "tabTitle": "Shell",
             "useAcrylic": true
         },
