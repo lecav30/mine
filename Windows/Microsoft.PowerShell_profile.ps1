@@ -9,7 +9,8 @@
  
 # Oh my posh
 oh-my-posh init pwsh | Invoke-Expression
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha_lecav.omp.json" --print) -join "`n"))
+& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha.omp.json" --print) -join "`n"))
+# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\solarized.omp.json" --print) -join "`n"))
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
@@ -20,11 +21,8 @@ Set-PSReadLineOption -BellStyle None
 # Terminal-Icons
 Import-Module -Name Terminal-Icons
 
-# Winfetch
-Set-Alias winfetch pwshfetch-test-1 
-
-Set-Alias -Name vi -Value nvim
-Set-Alias -Name vim -Value nvim
+Set-Alias -Name vi -Value nvim.exe
+Set-Alias -Name nvim -Value nvim-qt.exe
 Set-Alias -Name lg -Value lazygit
 
 Set-Alias -Name ll -Value ls
@@ -43,10 +41,6 @@ function home ($command) {
         Set-Location "$env"
     }
 
-function programs ($command) {
-        Set-Location "E:\Programs"
-    }
-
 function jsonsvr ($command) {
         json-server --watch server/db.json --routes server/routes.json
     }
@@ -58,4 +52,3 @@ function mysql-c ($command) {
 function parrot ($command) {
         curl parrot.live
     }
-
