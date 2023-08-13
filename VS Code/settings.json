@@ -11,34 +11,34 @@
   "editor.stickyScroll.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.fontFamily": "Victor Mono",
+  "editor.fontFamily": "CaskaydiaCove Nerd Font, VictorMono Nerd Font, BlexMono Nerd Font, Mononoki Nerd Font",
   "editor.fontSize": 18,
   "editor.suggest.insertMode": "replace",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.semanticHighlighting.enabled": true,
-  "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.overviewRulerBorder": false,
-  "editor.scrollbar.vertical": "hidden",
+  "editor.rulers": [
+    80
+  ],
   "editor.hideCursorInOverviewRuler": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.highlightActiveBracketPair": true,
   "editor.inlineSuggest.enabled": true,
   "editor.suggest.preview": true,
-  "breadcrumbs.enabled": true,
+  "editor.lineNumbers": "on",
+  "breadcrumbs.enabled": false,
   "files.autoSave": "afterDelay",
-  "workbench.productIconTheme": "icons-carbon",
-  "workbench.iconTheme": "icons",
   "workbench.startupEditor": "none",
   "workbench.settings.editor": "json",
-  "workbench.activityBar.visible": false,
-  "workbench.statusBar.visible": false,
-  "workbench.editor.showTabs": false,
+  "workbench.layoutControl.enabled": false,
   "window.titleBarStyle": "custom",
-  "window.titleSeparator": " | ",
-  "window.menuBarVisibility": "compact",
-  "window.zoomLevel": 0.8,
+  "window.title": "${appName}${separator}${rootName}",
+  "window.titleSeparator": " 🍃 ",
+  "window.zoomLevel": 0.5,
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
   "security.workspace.trust.untrustedFiles": "open",
   /************************************ LANGUAGES/FILES *********************************/
   // C++
@@ -52,6 +52,7 @@
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
   "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\g++.exe",
   // html
+  "html.autoClosingTags": true,
   "[html]": {
     "editor.tabSize": 2
   },
@@ -88,7 +89,7 @@
   "[python]": {
     "editor.formatOnPaste": false,
     "editor.formatOnSaveMode": "file",
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "ms-python.autopep8"
   },
   // latex
   "[tex]": {
@@ -118,7 +119,26 @@
     "\"C:\\Users\\<Username>\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe\" \"C:\\Users\\<U>\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\out\\cli.js\" --ms-enable-electron-run-as-node -r -g \"%f:%l\"",
     "%PDF%"
   ],
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "debug.openDebug": "openOnDebugBreak",
+  "debug.internalConsoleOptions": "openOnSessionStart",
   /************************************** EXTENSIONS ************************************/
+  /* CODESNAP */
+  "codesnap.containerPadding": "1em",
+  /* TAILWINDCSS */
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss",
+    "*.astro": "html"
+  },
   /* LIVESERVER */
   "liveServer.settings.donotShowInfoMsg": true,
   /* LIVESHARE */
@@ -132,9 +152,11 @@
   /* GITHUB COPILOT */
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": false,
-    "markdown": false
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "cpp": false
   },
   /* TABNINE */
   "tabnine.experimentalAutoImports": true,
@@ -142,15 +164,14 @@
   // Terminal Integrada
   "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono Light",
   "terminal.integrated.fontSize": 16,
-  "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.defaultLocation": "view",
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.windows": "Pwsh7",
   "terminal.integrated.enableMultiLinePasteWarning": false,
   "terminal.integrated.profiles.windows": {
-    // "Pwsh7": {
-    //   "source": "PowerShell7",
-    //   "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
-    // },
+    "Pwsh7": {
+      "source": "PowerShell7",
+      "path": "C:\\Users\\lecav\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
+    },
     "PowerShell": {
       "source": "PowerShell",
       "icon": "terminal-powershell",
@@ -179,4 +200,14 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   "workbench.colorTheme": "Catppuccin Macchiato",
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning"
+  ],
+  "workbench.editorAssociations": {
+    "*.sql": "default"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "symbols.hidesExplorerArrows": false,
 }
