@@ -1,3 +1,8 @@
+# https://github.com/alacritty/alacritty-theme
+
+import:
+ - ~/.config/alacritty/themes/themes/catppuccin.yaml
+
 window:
   opacity: 0.9
 
@@ -33,36 +38,27 @@ font:
 
   size: 11.0
 
-colors:
-  # Default colors
-  primary:
-   background: '#222222'
-   foreground: '#F9F9F9'
-
-  # Normal colors
-  normal:
-    black:   '#3f3f3f'
-    red:     '#cc0000'
-    green:   '#4e9a06'
-    yellow:  '#c4a000'
-    blue:    '#94bff3'
-    magenta: '#85678f'
-    cyan:    '#06989a'
-    white:   '#dcdccc'
-
-  # Bright colors
-  bright:
-    black:   '#545454'
-    red:     '#fc5454'
-    green:   '#8ae234'
-    yellow:  '#fce94f'
-    blue:    '#94bff3'
-    magenta: '#b294bb'
-    cyan:    '#93e0e3'
-    white:   '#ffffff'
-
 selection:
   save_to_clipboard: false
 
 shell:
   program: /bin/fish
+
+key_bindings:
+  # (Windows, Linux, and BSD only)
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: Paste,     mods: None,          action: Paste                       }
+  - { key: Copy,      mods: None,          action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
