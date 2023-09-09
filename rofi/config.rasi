@@ -1,14 +1,13 @@
 configuration {
-  sidebar-mode:  true;
-  hide-scrollbar: true;
   kb-cancel: "Escape,Control+bracketleft";
   kb-mode-next: "Alt+Right,Shift+Right,Control+Tab";
   kb-mode-previous: "Alt+Left,Shift+Left,Control+ISO_Left_Tab";
-  /* kb-row-select:; */
-  modi: "combi,drun,window,ssh";
-  combi-modi: "window,drun";
-  show: "combi";
-  monitor: "-4";
+  drun-display-format: "{icon} {name}";
+  display-drun: "Applications";
+  display-window: "Windows";
+  modi: "window,drun,run";
+  show-icons: true;
+  icon-theme: "Papirus";
   terminal: "fish";
 }
 @theme "Arc-Dark"
