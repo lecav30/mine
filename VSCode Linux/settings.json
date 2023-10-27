@@ -1,0 +1,178 @@
+{
+  /*********************************** SETTINGS *****************************************/
+  "editor.insertSpaces": true,
+  "editor.fontLigatures": true,
+  "editor.tabSize": 4,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontFamily": "Fira Code, MonoLisa Trial, Cascadia Code, Mononoki Nerd Font",
+  "editor.fontSize": 18,
+  "editor.suggest.insertMode": "replace",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.minimap.enabled": false,
+  "editor.overviewRulerBorder": false,
+  "editor.rulers": [
+    80
+  ],
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.preview": true,
+  "editor.lineNumbers": "relative",
+  "breadcrumbs.enabled": false,
+  "files.autoSave": "afterDelay",
+  "workbench.startupEditor": "none",
+  "workbench.settings.editor": "json",
+  "workbench.layoutControl.enabled": false,
+  "window.titleBarStyle": "custom",
+  "window.title": "${appName}${separator}${rootName}",
+  "window.menuBarVisibility": "toggle",
+  "window.commandCenter": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  /************************************ LANGUAGES/FILES *********************************/
+  // html
+  "html.autoClosingTags": true,
+  "[html]": {
+    "editor.tabSize": 2
+  },
+  // javascript
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // typescript
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // css
+  "[css]": {
+    "editor.tabSize": 2
+  },
+  // json
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.tabSize": 2
+  },
+  // vue
+  "[vue]": {
+    "editor.tabSize": 2
+  },
+  // react
+  "[javascriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  // astro
+  "[astro]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[csharp]": {
+    "editor.defaultFormatter": "muhammad-sammy.csharp"
+  },
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  /************************************** EXTENSIONS ************************************/
+  "errorLens.enabledDiagnosticLevels": [
+    "warning"
+  ],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": [
+        "<C-a>"
+      ],
+      "after": [
+        "g",
+        "g",
+        "<S-v>",
+        "G"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "w"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "q"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
+    },
+    {
+      "before": [
+        "leader",
+        "e"
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        ":"
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ],
+      "silent": true
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-h>": false,
+    "<C-k>": false,
+    "<C-j>": false,
+  },
+  /**************************************** TERMINAL ************************************/
+  // Terminal Integrada
+  "terminal.integrated.fontFamily": "Mona Lisa Trial, Cascadia Code",
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.windows": "",
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  // Terminal Externa
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "workbench.editorAssociations": {
+    "*.sql": "default"
+  },
+  "workbench.productIconTheme": "fluent-icons",
+  "terminal.integrated.defaultProfile.linux": "fish",
+  "terminal.external.linuxExec": "alacritty",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "window.zoomLevel": 1
+}
