@@ -8,9 +8,12 @@
 # Winfetch
  
 # Oh my posh
-oh-my-posh init pwsh | Invoke-Expression
-& ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha.omp.json" --print) -join "`n"))
+# oh-my-posh init pwsh | Invoke-Expression
+# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha.omp.json" --print) -join "`n"))
 # & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\solarized.omp.json" --print) -join "`n"))
+
+# Starship
+Invoke-Expression (&starship init powershell)
 
 # PSReadLine
 Set-PSReadLineOption -PredictionSource History
@@ -27,7 +30,6 @@ Set-Alias -Name lg -Value lazygit
 
 Set-Alias -Name ll -Value ls
 Set-Alias -Name touch -Value New-Item
-Set-Alias -Name pdw -Value pwd
 Set-Alias -Name cls -Value clear
 
 Set-Alias -Name whr -Value where.exe
@@ -43,10 +45,6 @@ function home ($command) {
 
 function jsonsvr ($command) {
         json-server --watch server/db.json --routes server/routes.json
-    }
-
-function mysql-c ($command) {
-        mysql -u root -pdatabase2002
     }
 
 function parrot ($command) {
