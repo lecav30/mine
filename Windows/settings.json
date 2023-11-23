@@ -11,10 +11,21 @@
         },
         {
             "command": {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "keys": "alt+shift+v"
+        },
+        {
+            "command": {
                 "action": "resizePane",
                 "direction": "right"
             },
             "keys": "alt+shift+l"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+f"
         },
         {
             "command": {
@@ -25,10 +36,9 @@
         },
         {
             "command": {
-                "action": "resizePane",
-                "direction": "up"
+                "action": "closeOtherTabs"
             },
-            "keys": "alt+shift+k"
+            "keys": "ctrl+shift+q"
         },
         {
             "command": {
@@ -47,10 +57,10 @@
         },
         {
             "command": {
-                "action": "splitPane",
-                "split": "right"
+                "action": "resizePane",
+                "direction": "up"
             },
-            "keys": "alt+shift+v"
+            "keys": "alt+shift+k"
         },
         {
             "command": {
@@ -75,26 +85,22 @@
         },
         {
             "command": {
+                "action": "closeTab"
+            },
+            "keys": "ctrl+q"
+        },
+        {
+            "command": {
                 "action": "moveFocus",
                 "direction": "left"
             },
             "keys": "alt+h"
         },
         {
-            "command": "find",
-            "keys": "ctrl+f"
-        },
-        {
-            "command": "newTab",
+            "command": {
+                "action": "newTab"
+            },
             "keys": "ctrl+t"
-        },
-        {
-            "command": "closeTab",
-            "keys": "ctrl+q"
-        },
-        {
-            "command": "closeOtherTabs",
-            "keys": "ctrl+shift+q"
         },
         {
             "command": "closePane",
@@ -109,22 +115,26 @@
     "copyOnSelect": false,
     "defaultProfile": "{bdd441bf-9fcc-4532-a6d6-73a967920243}",
     "initialCols": 100,
-    "initialRows": 25,
     "initialPosition": "245,80",
-    "launchMode": "focus", // without decorations
+    "initialRows": 25,
+    "launchMode": "default",
+    "newTabMenu": [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": {
         "defaults": {
-            "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Imágenes\\Background\\miyamoto_musashi.jpg",
+            "backgroundImage": "C:\\Users\\lecav\\OneDrive\\Im\u00e1genes\\Background\\white_flwr.jpeg",
             "backgroundImageOpacity": 0.2,
-            // "background": "#0C0C0C",
-            "colorScheme": "Solarized Dark",
+            "colorScheme": "Solarized Dark Higher Contrast",
             "font": {
                 "face": "CaskaydiaCove Nerd Font",
                 "size": 14.0,
                 "weight": "normal"
             },
             "padding": "15",
-            "startingDirectory": "%USERPROFILE%",
+            "startingDirectory": "D:",
             "tabTitle": "Shell",
             "useAcrylic": true
         },
@@ -157,18 +167,6 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{85e3df73-9abe-5c6d-9236-b6adfd0fedea}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{b1f8b327-c3d4-5cff-9a33-edc149778fe5}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -728,7 +726,7 @@
     ],
     "startOnUserLogin": true,
     "tabWidthMode": "titleLength",
-    "theme": "dark",
+    "themes": [],
     "useAcrylicInTabRow": true,
     "wordDelimiters": " /\\()\"'-.,:;<>~!@#$%^&*|+=[]{}~?\u2502"
 }
