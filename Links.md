@@ -1,21 +1,21 @@
 # Icons
 
-[Hericons](https://heroicons.com)
-[Icons free](https://icon-icons.com/es/)
-[Font awesome icons](https://fontawesome.com/icons)
-[Yesicon](https://yesicon.app/?lang=es)
+[Hericons](https://heroicons.com) 
+[Icons free](https://icon-icons.com/es/) 
+[Font awesome icons](https://fontawesome.com/icons) 
+[Yesicon](https://yesicon.app/?lang=es) 
 
 # CSS
 
 ## UI
 
-[Collect UI: UI inspiration](https://collectui.com)
-[UIverse](https://uiverse.io/)
+[Collect UI: UI inspiration](https://collectui.com) 
+[UIverse](https://uiverse.io/) 
 
 ## Animation
 
-[Animate.css](https://animate.style/)
-[Animatiss](https://xsgames.co/animatiss/)
+[Animate.css](https://animate.style/) 
+[Animatiss](https://xsgames.co/animatiss/) 
 
 ## Radius
 
@@ -91,13 +91,13 @@
 
 [Correo Temporal](https://correotemporal.org/)
 [Roadmap](https://roadmap.sh)
-[LSP Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)
-[Devhints: Cheatsheet](https://devhints.io/)
-[Simla: WhatsApp Link Generator](https://www.simla.com/es/whatsapp-link-generator)
-[Duplichecker](https://www.duplichecker.com/es)
-[Scribbr: Plage detector](https://www.scribbr.es)
-[Scribbr: Citar APA](https://www.scribbr.es/citar/generador/apa/)
-[Adobe UI Enhance voice](https://podcast.adobe.com/enhance)
+[LSP Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md) 
+[Devhints: Cheatsheet](https://devhints.io/) 
+[Simla: WhatsApp Link Generator](https://www.simla.com/es/whatsapp-link-generator) 
+[Duplichecker](https://www.duplichecker.com/es) 
+[Scribbr: Plage detector](https://www.scribbr.es) 
+[Scribbr: Citar APA](https://www.scribbr.es/citar/generador/apa/) 
+[Adobe UI Enhance voice](https://podcast.adobe.com/enhance) 
 [Myinstants: Sounds](https://www.myinstants.com/es/index/us/)
 [Web Check](https://web-check.xyz/)
 
@@ -111,9 +111,10 @@
 
 # Books & Documentation
 
-[Refactoring Guru: Design Patterns](https://refactoring.guru/design-patterns)
-[Zeal Docs: Documentation Languages](https://zealdocs.org)
-[Python Books](https://pythonbooks.revolunet.com)
+[Refactoring Guru: Design Patterns](https://refactoring.guru/design-patterns) 
+[Zeal Docs: Documentation Languages](https://zealdocs.org) 
+[Python Books](https://pythonbooks.revolunet.com) 
+[Pattern Devs](https://www.patterns.dev/#patterns)
 
 # Despliegues
 
@@ -121,9 +122,9 @@
 
 # Git
 
-[DownGit](https://downgit.evecalm.com/#/home)
-[GitIgnore](https://www.toptal.com/developers/gitignore/)
-[Ubigeo Perú](https://github.com/ernestorivero/Ubigeo-Peru)
+[DownGit](https://downgit.evecalm.com/#/home) 
+[GitIgnore](https://www.toptal.com/developers/gitignore/) 
+[Ubigeo Perú](https://github.com/ernestorivero/Ubigeo-Peru) 
 
 # Fonts
 
