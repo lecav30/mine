@@ -1,9 +1,9 @@
 # Icons
 
 [Hericons](https://heroicons.com) 
-[Icons free](https://icon-icons.com/es/) 
 [Font awesome icons](https://fontawesome.com/icons) 
 [Yesicon](https://yesicon.app/?lang=es) 
+[Flaticon](https://www.flaticon.com)
 
 # CSS
 
