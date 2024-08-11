@@ -1,0 +1,13 @@
+[
+    { "keys": ["ctrl+k", "ctrl+b"], "command": "build" },
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+    {
+       "keys": ["ctrl+j"],
+       "command": "toggle_terminus_panel",
+       "args" : {
+           "cmd": "bash",
+           "cwd": "${file_path:${folder}}",
+           "panel_name": "Terminus"
+       }
+   }
+]

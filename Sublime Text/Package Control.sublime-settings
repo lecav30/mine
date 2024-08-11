@@ -1,0 +1,24 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Alignment",
+		"AutoFileName",
+		"Babel",
+		"BracketHighlighter",
+		"Catppuccin color schemes",
+		"Emmet",
+		"GitGutter",
+		"Gutter Color",
+		"Package Control",
+		"Python 3",
+		"React IDE",
+		"SideBarEnhancements",
+		"SublimeGit",
+		"Terminus",
+	],
+}
