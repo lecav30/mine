@@ -1,0 +1,92 @@
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "Quit"
+key = "Q"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "Return"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Plus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[general]
+live_config_reload = true
+working_directory = 'C:\\Users\\lecav\\'
+
+[terminal]
+
+[font]
+size = 12.0
+
+[font.bold]
+family = "CommitMono Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "monospace"
+style = "Bold Italic"
+
+[font.italic]
+family = "CommitMono Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "CommitMono Nerd Font Mono"
+style = "Regular"
+
+[scrolling]
+history = 50000
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
+
+[terminal.shell]
+program = "pwsh"
+
+[window]
+decorations = "none"
+opacity = 0.9
+
+[window.dimensions]
+columns = 100
+lines = 30
+
+[window.padding]
+x = 15
+y = 15
+
+[window.position]
+x = 280
+y = 80
+
