@@ -10,7 +10,7 @@ This repository is about other configurations that I need for several applicatio
 - Git Bash
 - PowerShell 7
 - Alacritty
-- Fish
+- Wezterm
 - Tmux
 
 ### Notes GVim
