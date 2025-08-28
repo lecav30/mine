@@ -1,36 +1,31 @@
-# Microsoft.PowerShel profile of Sebastián Lévano #
-# Modules:
-# Z
-# PSReadLine
-# Terminal-Icons
+# Zoxide
+Invoke-Expression (& { (zoxide init powershell | Out-String) })
 
-# Scripts:
-# Winfetch
- 
-# Oh my posh
-# oh-my-posh init pwsh | Invoke-Expression
-# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\catppuccin_mocha.omp.json" --print) -join "`n"))
-# & ([ScriptBlock]::Create((oh-my-posh init pwsh --config "$env:OneDrive\solarized.omp.json" --print) -join "`n"))
-
-# Starship
-Invoke-Expression (&starship init powershell)
-
-# PSReadLine
-Set-PSReadLineOption -PredictionSource History
-Set-PSReadLineOption -PredictionViewStyle ListView
-Set-PSReadLineOption -EditMode Emacs
-Set-PSReadLineOption -BellStyle None
-
-# Terminal-Icons
-Import-Module -Name Terminal-Icons
-
+# Terminal Utilities
 Set-Alias -Name vi -Value nvim.exe
-Set-Alias -Name nvim -Value nvim-qt.exe
+Set-Alias -Name vim -Value nvim.exe
+Set-Alias -Name neovim -Value nvim-qt.exe
 Set-Alias -Name lg -Value lazygit
 
-Set-Alias -Name ll -Value ls
+# Common
+# Set-Alias -Name ll -Value ls
 Set-Alias -Name touch -Value New-Item
-Set-Alias -Name cls -Value clear
+Set-Alias -Name cls -Value Clear-Host
+Set-Alias -Name g -Value git
+
+# Subir directorios
+Function .. { Set-Location .. }
+Function ... { Set-Location ../.. }
+Function .... { Set-Location ../../.. }
+Function ..... { Set-Location ../../../.. }
+
+# Eza (ls alternativa)
+Function ld { eza -lD }
+Function lf { eza -lF --color=always | Where-Object { $_ -notmatch '/$' } }
+Function lh { eza -dl .* --group-directories-first }
+Function ll { eza -al --group-directories-first }
+Function ls { eza -alF --color=always --sort=size | Where-Object { $_ -notmatch '/$' } }
+Function lt { eza -al --sort=modified }
 
 Set-Alias -Name whr -Value where.exe
 
@@ -43,10 +38,32 @@ function home ($command) {
         Set-Location "$env"
     }
 
-function jsonsvr ($command) {
-        json-server --watch server/db.json --routes server/routes.json
-    }
+function Remove-StaleGitBranches {
+    param (
+        [string]$RepoPath = "."
+    )
 
-function parrot ($command) {
-        curl parrot.live
+    Set-Location $RepoPath
+
+    # Get remote branches
+    git fetch --prune
+
+    # Get local branches that don't have a remote version
+    $localBranches = git branch | ForEach-Object { $_.Trim() -replace '^\* ' }
+    $remoteBranches = git branch -r | ForEach-Object { $_.Trim() -replace '^origin/' }
+
+    $staleBranches = $localBranches | Where-Object { $_ -ne "main" -and $_ -ne "master" -and ($remoteBranches -notcontains $_) }
+
+    if ($staleBranches.Count -eq 0) {
+        Write-Host "✅ There is no stale branches."
+    } else {
+        Write-Host "🗑️  Removing stale branches:"
+        foreach ($branch in $staleBranches) {
+            Write-Host " - $branch"
+            git branch -d $branch
+        }
     }
+}
+
+# Starship
+Invoke-Expression (&starship init powershell)
