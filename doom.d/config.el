@@ -34,6 +34,8 @@
 
 ;; Keywords para Org-mode
 (after! org
+    ;; Listar archivos de agenda
+  (setq org-agenda-files '("/mnt/c/Users/lecav/org/"))
    ;; Cuando marques una tarea como DONE, inserta automáticamente CLOSED: [timestamp]
   (setq org-log-done 'time)
 
