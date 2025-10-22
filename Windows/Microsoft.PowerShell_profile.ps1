@@ -67,3 +67,12 @@ function Remove-StaleGitBranches {
 
 # Starship
 Invoke-Expression (&starship init powershell)
+
+# PSReadLine
+Set-PSReadLineOption -PredictionSource History
+Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -BellStyle None
+
+# Terminal-Icons
+Import-Module -Name Terminal-Icons
