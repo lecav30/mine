@@ -1,0 +1,154 @@
+{
+  // Minimal UI — Obsidian vault preferences take precedence.
+  "workbench.colorTheme": "oxocarbon OLED",
+  "workbench.iconTheme": "vscode-icons-mac",
+  "workbench.activityBar.location": "hidden",
+  "workbench.statusBar.visible": true,
+  "workbench.layoutControl.enabled": false,
+  "workbench.navigationControl.enabled": false,
+  "window.commandCenter": false,
+  "workbench.editor.showTabs": "single",
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.editor.alwaysShowEditorActions": false,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.decorations.badges": false,
+  "workbench.editor.decorations.colors": false,
+  "workbench.panel.showLabels": false,
+  "workbench.tips.enabled": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.settings.editor": "json",
+  "window.density.editorTabHeight": "compact",
+  "breadcrumbs.enabled": false,
+
+  // Editor
+  "editor.fontFamily": "D2KodingLigature Nerd Font Mono",
+  "editor.fontSize": 16,
+  "editor.fontLigatures": true,
+  "editor.lineHeight": 1.55,
+  "editor.lineNumbers": "relative",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderLineHighlightOnlyWhenFocus": true,
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.folding": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.overviewRulerBorder": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "editor.colorDecorators": false,
+  "editor.codeLens": false,
+  "editor.links": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  "editor.parameterHints.enabled": false,
+  "editor.semanticHighlighting.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.rulers": [80],
+  "editor.renderFinalNewline": "off",
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.tabCompletion": "on",
+  "editor.linkedEditing": true,
+
+  // Files, Explorer, and Git
+  "files.trimTrailingWhitespace": true,
+  "files.associations": {
+    ".env.*": "dotenv",
+    ".prettierrc": "json",
+    "*.css": "css"
+  },
+  "files.exclude": {
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.git": true,
+    ".vscode": true
+  },
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.compactFolders": false,
+  "explorer.sortOrder": "foldersNestsFiles",
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 8,
+  "git.blame.editorDecoration.enabled": true,
+  "git.blame.editorDecoration.disableHover": false,
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "always",
+
+  // Formatting and language tooling
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[aspnetcorerazor]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "js/ts.experimental.useTsgo": true,
+  "emmet.triggerExpansionOnTab": true,
+
+  // Neovim-backed Vim mode — loads ~/.config/nvim with vim.g.vscode set.
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+
+  // Terminal and existing integrations
+  "terminal.integrated.fontFamily": "'M+CodeLat60 Nerd Font Mono'",
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.showExitAlert": false,
+  "terminal.external.osxExec": "Warp",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "chat.viewSessions.orientation": "stacked",
+  "chat.titleBar.openInAgentsWindow.enabled": false,
+  "claudeCode.preferredLocation": "panel",
+  "workbench.browser.showInTitleBar": false,
+
+  // General behavior
+  "extensions.ignoreRecommendations": true,
+  "editor.accessibilitySupport": "off",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.promptForLocalFileProtocolHandling": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "update.mode": "start",
+  "update.showReleaseNotes": false,
+  "window.newWindowProfile": "Default",
+  "window.confirmBeforeClose": "keyboardOnly",
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
+  "@azure.argTenant": "430a3574-8876-4ce6-bcb4-180e34dc89b2",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
+}
